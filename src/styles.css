@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  /*background-color: #173042;*/
+  background: linear-gradient(
+    160deg,
+    #173042 0%,
+    #214a59 25%,
+    #2c6671 50%,
+    #357c84 75%,
+    #3f9599 100%
+  );
+}

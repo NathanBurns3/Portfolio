@@ -1,0 +1,109 @@
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: azure;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.topnav a:hover {
+  color: aquamarine;
+  text-decoration: underline;
+}
+
+.resume {
+  float: right;
+  border: 2px solid aquamarine;
+  border-radius: 5px;
+  padding: 10px;
+  color: aquamarine;
+  background-color: transparent;
+  margin: 15px;
+}
+
+.resume:hover {
+  background-color: #2b4c63;
+  font-weight: bold;
+  padding: 10px 9px;
+}
+
+.home {
+  text-align: left;
+  margin-top: 200px;
+  margin-bottom: 500px;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home h3 {
+  color: darkgrey;
+  font-size: 30px;
+  margin-bottom: -65px;
+}
+
+.home h1 {
+  color: azure;
+  font-size: 100px;
+  margin-bottom: -5px;
+  margin-left: -0.05em;
+}
+
+.home h1 {
+  overflow: hidden;
+  border-right: 0.1em solid aquamarine;
+  width: 0;
+  white-space: nowrap;
+  animation: typing 3s forwards;
+}
+
+.name-container {
+  display: inline-block;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  99% {
+    width: 100%;
+    border-right: 0.1em solid aquamarine;
+  }
+  100% {
+    width: 100%;
+    border: transparent;
+  }
+}
+
+.home h4 {
+  color: aquamarine;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.home button {
+  background-color: transparent;
+  border: none;
+  margin: 4px;
+  height: 23px;
+}
+
+.home img {
+  width: 20px;
+  height: 20px;
+}
+
+.home form {
+  display: inline-block;
+  height: 31px;
+}
+
+.btn-group {
+  margin-left: -0.5em;
+}

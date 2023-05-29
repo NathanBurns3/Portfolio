@@ -1,0 +1,29 @@
+<div class="topnav">
+  <button class="resume">Resume</button>
+  <a href="#contact"> Contact </a>
+  <a href="#skills"> Skills </a>
+  <a href="#projects"> Projects </a>
+  <a href="#about"> About </a>
+</div>
+
+<div class="home">
+  <h3>Hey there, I'm</h3>
+  <div class="name-container">
+    <h1>Nathan Burns</h1>
+  </div>
+  <h4>Software Development Student</h4>
+  <div class="btn-group">
+    <ng-container *ngFor="let link of socialMediaLinks">
+      <form [action]="link.url" method="get" target="_blank">
+        <button>
+          <img
+            [src]="link.iconSrc"
+            (mouseover)="link.iconSrc = link.iconSrcHover"
+            (mouseout)="link.iconSrc = link.iconSrcDefault"
+            [alt]="link.altText"
+          />
+        </button>
+      </form>
+    </ng-container>
+  </div>
+</div>
