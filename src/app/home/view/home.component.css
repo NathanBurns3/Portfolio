@@ -37,7 +37,7 @@
   text-align: left;
   margin-top: 200px;
   margin-bottom: 500px;
-  max-width: 60em;
+  max-width: 41em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -53,9 +53,6 @@
   font-size: 100px;
   margin-bottom: -5px;
   margin-left: -0.05em;
-}
-
-.home h1 {
   overflow: hidden;
   border-right: 0.1em solid aquamarine;
   width: 0;
@@ -63,8 +60,12 @@
   animation: typing 3s forwards;
 }
 
+.home h1 {
+}
+
 .name-container {
   display: inline-block;
+  width: 41em;
 }
 
 @keyframes typing {

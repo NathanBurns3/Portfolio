@@ -9,9 +9,9 @@ import { LinkService } from '../service/link.service';
   providers: [LinkService],
 })
 export class HomeComponent implements OnInit {
-  constructor(private linkService: LinkService) {}
-
   socialMediaLinks: ILink[] = [];
+
+  constructor(private linkService: LinkService) {}
 
   ngOnInit() {
     this.socialMediaLinks = this.linkService.getSocialMediaLinks();

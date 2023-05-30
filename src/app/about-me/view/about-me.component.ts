@@ -1,0 +1,37 @@
+import { Component, OnInit } from '@angular/core';
+import { PortraitPhotoService } from '../service/portrait-photos.service';
+import { IPortraitPhoto } from '../model/portrait-photos';
+
+@Component({
+  selector: 'about-me',
+  templateUrl: './about-me.component.html',
+  styleUrls: ['./about-me.component.css'],
+  providers: [PortraitPhotoService],
+})
+export class AboutMeComponent implements OnInit {
+  selectedindex = 1;
+  portraitPhotos: IPortraitPhoto[] = [];
+
+  constructor(private portraitPhotoService: PortraitPhotoService) {}
+
+  slideShow() {
+    console.log('slideshow');
+    var i;
+    var x = document.getElementsByClassName('mySlides');
+    for (i = 0; i < x.length; i++) {
+      (x[i] as HTMLElement).style.display = 'none';
+    }
+    if (this.selectedindex >= x.length) {
+      this.selectedindex = 1;
+    } else {
+      this.selectedindex++;
+    }
+    (x[this.selectedindex - 1] as HTMLElement).style.display = 'block';
+    setTimeout(this.slideShow.bind(this), 2000); // Change image every 2 seconds */
+  }
+
+  ngOnInit() {
+    this.slideShow();
+    this.portraitPhotos = this.portraitPhotoService.getPortraitPhotos();
+  }
+}
