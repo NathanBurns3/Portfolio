@@ -1,18 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { PortraitPhotoService } from '../service/portrait-photos.service';
-import { IPortraitPhoto } from '../model/portrait-photos';
 
 @Component({
   selector: 'about-me',
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.css'],
-  providers: [PortraitPhotoService],
 })
 export class AboutMeComponent implements OnInit {
   selectedindex = 1;
-  portraitPhotos: IPortraitPhoto[] = [];
-
-  constructor(private portraitPhotoService: PortraitPhotoService) {}
 
   slideShow() {
     console.log('slideshow');
@@ -32,6 +26,5 @@ export class AboutMeComponent implements OnInit {
 
   ngOnInit() {
     this.slideShow();
-    this.portraitPhotos = this.portraitPhotoService.getPortraitPhotos();
   }
 }
