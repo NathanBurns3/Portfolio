@@ -1,0 +1,34 @@
+<div id="projects">
+  <h2>Projects</h2>
+  <hr />
+  <br /><br /><br />
+
+  <ng-container *ngFor="let project of projectInfo">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img
+            class="Image"
+            [src]="project.imageSrc"
+            [alt]="project.imageAlt"
+            style="width: 100%"
+          />
+          <div class="hiddenText">
+            <h1>{{ project.projectTitle }}</h1>
+            <h3>{{ project.toolsUsed }}</h3>
+            <h4>
+              <ul>
+                <li *ngFor="let description of project.projectDescription">
+                  {{ description }}
+                </li>
+              </ul>
+            </h4>
+            <p *ngIf="project.repoLink">
+              <a [href]="project.repoLink" target="_blank">GitHub Repo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

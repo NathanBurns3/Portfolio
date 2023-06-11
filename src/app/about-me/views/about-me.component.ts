@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortraitPhotoService } from '../service/portrait-photos.service';
-import { IPortraitPhoto } from '../model/portrait-photos';
+import { PortraitPhotoService } from '../services/portrait-photos.service';
+import { IPortraitPhoto } from '../models/portrait-photos';
 
 @Component({
   selector: 'about-me',
