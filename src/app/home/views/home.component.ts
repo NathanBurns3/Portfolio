@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ILink } from '../model/links';
-import { LinkService } from '../service/link.service';
+import { ILink } from '../models/links';
+import { LinkService } from '../services/link.service';
 
 @Component({
   selector: 'home',

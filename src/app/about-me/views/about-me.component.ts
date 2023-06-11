@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD:src/app/about-me/view/about-me.component.ts
+=======
+import { PortraitPhotoService } from '../services/portrait-photos.service';
+import { IPortraitPhoto } from '../models/portrait-photos';
+>>>>>>> projects:src/app/about-me/views/about-me.component.ts
 
 @Component({
   selector: 'about-me',
