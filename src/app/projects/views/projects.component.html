@@ -15,7 +15,7 @@
           />
           <div class="hiddenText">
             <h1>{{ project.projectTitle }}</h1>
-            <h3>{{ project.toolsUsed }}</h3>
+            <h3 *ngFor="let tool of project.toolsUsed">{{ tool }}</h3>
             <h4>
               <ul>
                 <li *ngFor="let description of project.projectDescription">

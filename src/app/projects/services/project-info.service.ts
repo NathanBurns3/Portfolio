@@ -12,8 +12,15 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/WebAPI.png',
         imageAlt: 'Web API',
         projectTitle: 'Web API',
-        toolsUsed:
-          'C# | ASP.NET Core | Entity Framework Core | SQL Server | Postman | NSwag | Git',
+        toolsUsed: [
+          'C#',
+          'ASP.NET Core',
+          'Entity Framework Core',
+          'SQL Server',
+          'Postman',
+          'NSwag',
+          'Git',
+        ],
         projectDescription: [
           'Developed a Web API using ASP.NET, with 4 controllers and Entity Framework Core for seamless database connectivity',
           'Utilized the NSwag library to view controllers and their actions',
@@ -26,8 +33,15 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/ERG.png',
         imageAlt: 'Endless Runner',
         projectTitle: 'Endless Runner Game',
-        toolsUsed:
-          'JavaScript | Geolocation API | OpenWeather API | Phaser | HTML | CSS | Git',
+        toolsUsed: [
+          'JavaScript',
+          'Geolocation API',
+          'OpenWeather API',
+          'Phaser',
+          'HTML',
+          'CSS',
+          'Git',
+        ],
         projectDescription: [
           'Created a 2D game using JavaScript and the Phaser framework',
           "Incorporated Geolocation and Weather APIs to fetch real-time data and dynamically modify the game's appearance",
@@ -39,7 +53,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/SS.png',
         imageAlt: 'Student Scores GUI',
         projectTitle: 'Student Scores GUI',
-        toolsUsed: 'C# | .NET Core | Git',
+        toolsUsed: ['C#', '.NET Core', 'Entity Framework Core', 'Git'],
         projectDescription: [
           'Developed a .NET Core application that utilizes Entity Framework Core for database connectivity',
           'the application acts as a gradebook with student information, grades, calculated scores, and averages',
@@ -54,7 +68,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/nameAPI.png',
         imageAlt: 'Name API',
         projectTitle: 'Name API',
-        toolsUsed: 'C# | ASP.NET Core | Postman | NSwag | Git',
+        toolsUsed: ['C#', 'ASP.NET Core', 'Postman', 'NSwag', 'Git'],
         projectDescription: [
           'Developed a web API using ASP.NET and Entity Framework Core for database connectivity',
           'Implemented a GET HTTP request that returns a name',
@@ -66,7 +80,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/Async.png',
         imageAlt: 'Asynchronous Programming',
         projectTitle: 'Asynchronous Program',
-        toolsUsed: 'C# | .NET Core | Git',
+        toolsUsed: ['C#', '.NET Core', 'Git'],
         projectDescription: [
           'Developed an application using .NET Core that takes in two text files and asynchronously processes each file',
           'Displays the 10 most used words for each book',
@@ -78,7 +92,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/RFL.png',
         imageAlt: 'Recursive File Lister',
         projectTitle: 'Recursive File Lister',
-        toolsUsed: 'Java | JSwing | Git',
+        toolsUsed: ['Java', 'JSwing', 'Git'],
         projectDescription: [
           'Created a JSwing application that uses JFileChooser to allow users to select a directory in the system',
           'Uses a recursive approach to list all the files within the chosen directory and any of its sub-directories',
@@ -90,7 +104,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/BinarySearch.png',
         imageAlt: 'Binary Search GUI',
         projectTitle: 'Binary Search GUI',
-        toolsUsed: 'Java | JSwing | Git',
+        toolsUsed: ['Java', 'JSwing', 'Git'],
         projectDescription: [
           'Developed a custom binary search algorithm for efficient string searching in an array',
           'Facilitated user input of strings, sorting them in ascending order for improved searchability',
@@ -103,7 +117,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/SMV.png',
         imageAlt: 'Ski Mountain Website',
         projectTitle: 'Ski Mountain Website',
-        toolsUsed: 'HTML | CSS | JavaScript | Git',
+        toolsUsed: ['HTML', 'CSS', 'JavaScript', 'Git'],
         projectDescription: [
           'Designed and developed a responsive website using HTML, CSS, and JavaScript',
           'Included animations and interactive features',
@@ -117,7 +131,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/turningPoint.jpg',
         imageAlt: 'Vex Turning Point',
         projectTitle: 'Vex Turning Point',
-        toolsUsed: 'RobotC | VEX Robotics',
+        toolsUsed: ['RobotC', 'VEX Robotics'],
         projectDescription: [
           'Collaborated with a team to design a robot for a fast-paced point system game',
           'Mapped controller buttons to robot motors and gears',
@@ -129,7 +143,7 @@ export class ProjectInfoService {
         imageSrc: '../../../assets/project-images/marbleSorter.jpg',
         imageAlt: 'Vex Marble Sorter',
         projectTitle: 'Vex Marble Sorter',
-        toolsUsed: 'RobotC | VEX Robotics',
+        toolsUsed: ['RobotC', 'VEX Robotics'],
         projectDescription: [
           'Given a task to design and construct a machine to help recycle materials',
           'Coded a program in RobotC that would sense the light given off an object and sort it into assigned slots',
