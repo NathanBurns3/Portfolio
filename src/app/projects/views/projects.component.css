@@ -99,6 +99,10 @@ a:hover {
   transform: scale(1.1);
 }
 
+.column .card .Image {
+  transition: all 0.2s ease-in-out;
+}
+
 .column .hiddenText {
   position: absolute;
   top: 50%;

@@ -81,13 +81,13 @@
   left: 10%;
   font-weight: bold;
   color: azure;
-  text-shadow: 0px 1px darkgrey;
   font-size: 110%;
   opacity: 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 0.75em;
+  text-shadow: 0 0 1px rgba(240, 255, 255, 0.5);
 }
 
 #logo-holder:hover .image {
