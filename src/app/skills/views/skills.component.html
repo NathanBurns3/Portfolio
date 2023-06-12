@@ -1,0 +1,80 @@
+<div id="skills">
+  <h2>Skills</h2>
+  <hr id="title" />
+
+  <div class="content">
+    <h1>Programming Languages</h1>
+    <div id="background">
+      <div class="row" *ngFor="let language of programmingLanguages">
+        <div id="logo-holder">
+          <img
+            class="image"
+            [src]="language.imageSrc"
+            [alt]="language.imageAlt"
+          />
+          <div class="text">{{ language.skillName }}</div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <h1>Frameworks</h1>
+    <div id="background">
+      <div class="row" *ngFor="let framework of frameworks">
+        <div id="logo-holder">
+          <img
+            class="image"
+            [src]="framework.imageSrc"
+            [alt]="framework.imageAlt"
+          />
+          <div class="text">{{ framework.skillName }}</div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <h1>Database</h1>
+    <div id="background">
+      <div class="row" *ngFor="let database of databases">
+        <div id="logo-holder">
+          <img
+            class="image"
+            [src]="database.imageSrc"
+            [alt]="database.imageAlt"
+          />
+          <div class="text">{{ database.skillName }}</div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <h1>Software</h1>
+    <div id="background">
+      <div class="row" *ngFor="let software of softwares">
+        <div id="logo-holder">
+          <img
+            class="image"
+            [src]="software.imageSrc"
+            [alt]="software.imageAlt"
+          />
+          <div class="text">{{ software.skillName }}</div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+
+    <h1>Operating Systems</h1>
+    <div id="background">
+      <div class="row" *ngFor="let operatingSystem of operatingSystems">
+        <div id="logo-holder">
+          <img
+            class="image"
+            [src]="operatingSystem.imageSrc"
+            [alt]="operatingSystem.imageAlt"
+          />
+          <div class="text">{{ operatingSystem.skillName }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

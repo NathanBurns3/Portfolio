@@ -1,0 +1,99 @@
+#skills {
+  margin-top: 3500px;
+  margin-bottom: 1500px;
+  text-align: center;
+}
+
+#skills h2 {
+  color: azure;
+  font-size: 6em;
+  text-shadow: 0px 4px darkgray;
+}
+
+#skills h1 {
+  font-size: 2em;
+  display: inline-block;
+  color: azure;
+  text-shadow: 0 0 7px black;
+}
+
+.content {
+  color: azure;
+  list-style: none;
+  position: absolute;
+  margin-top: -2em;
+  padding-left: 0;
+}
+
+.row {
+  display: inline;
+}
+
+#background {
+  background-color: darkgrey;
+  border: 5px solid azure;
+  border-radius: 3em;
+  padding: 1em;
+  box-shadow: 0px 0px 1em black;
+  width: 75%;
+  margin: 0 auto;
+}
+
+#title {
+  width: 30em;
+  margin-top: -5.5em;
+  height: 0.3em;
+  background-color: azure;
+  border: none;
+  box-shadow: 0px 2px darkgrey;
+  margin-bottom: 7em;
+}
+
+#logo-holder {
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  margin-bottom: 24px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+#logo-holder .image {
+  width: 45%;
+  margin-bottom: -1.7em;
+}
+
+.image {
+  background-color: azure;
+  border: 5px solid azure;
+  box-shadow: 0px 0px 0.5em black;
+  border-radius: 5%;
+}
+
+#logo-holder .image,
+#logo-holder .text {
+  transition: opacity 0.5s ease-in-out;
+}
+
+#logo-holder .text {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-weight: bold;
+  color: azure;
+  text-shadow: 0px 1px darkgrey;
+  font-size: 110%;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0.75em;
+}
+
+#logo-holder:hover .image {
+  opacity: 0;
+}
+
+#logo-holder:hover .text {
+  opacity: 1;
+}
