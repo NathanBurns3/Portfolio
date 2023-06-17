@@ -9,7 +9,7 @@ export class ProjectInfoService {
     return [
       {
         //web api
-        imageSrc: 'assets/project-images/WebAPI.png',
+        imageSrc: '/assets/project-images/WebAPI.png',
         imageAlt: 'Web API',
         projectTitle: 'Web API',
         toolsUsed: [
@@ -30,7 +30,7 @@ export class ProjectInfoService {
       },
       {
         //endless runner
-        imageSrc: 'assets/project-images/ERG.png',
+        imageSrc: '/assets/project-images/ERG.png',
         imageAlt: 'Endless Runner',
         projectTitle: 'Endless Runner Game',
         toolsUsed: [
@@ -51,7 +51,7 @@ export class ProjectInfoService {
       },
       {
         //student scores gui
-        imageSrc: 'assets/project-images/SS.png',
+        imageSrc: '/assets/project-images/SS.png',
         imageAlt: 'Student Scores GUI',
         projectTitle: 'Student Scores GUI',
         toolsUsed: ['C#', '.NET Core', 'Entity Framework Core', 'Git'],
@@ -66,7 +66,7 @@ export class ProjectInfoService {
       },
       {
         //name api
-        imageSrc: 'assets/project-images/nameAPI.png',
+        imageSrc: '/assets/project-images/nameAPI.png',
         imageAlt: 'Name API',
         projectTitle: 'Name API',
         toolsUsed: ['C#', 'ASP.NET Core', 'Postman', 'NSwag', 'Git'],
@@ -78,7 +78,7 @@ export class ProjectInfoService {
       },
       {
         //asynchronous programming
-        imageSrc: 'assets/project-images/Async.png',
+        imageSrc: '/assets/project-images/Async.png',
         imageAlt: 'Asynchronous Programming',
         projectTitle: 'Asynchronous Program',
         toolsUsed: ['C#', '.NET Core', 'Git'],
@@ -90,7 +90,7 @@ export class ProjectInfoService {
       },
       {
         //recurisve file lister
-        imageSrc: 'assets/project-images/RFL.png',
+        imageSrc: '/assets/project-images/RFL.png',
         imageAlt: 'Recursive File Lister',
         projectTitle: 'Recursive File Lister',
         toolsUsed: ['Java', 'JSwing', 'Git'],
@@ -102,7 +102,7 @@ export class ProjectInfoService {
       },
       {
         //binary search gui
-        imageSrc: 'assets/project-images/BinarySearch.png',
+        imageSrc: '/assets/project-images/BinarySearch.png',
         imageAlt: 'Binary Search GUI',
         projectTitle: 'Binary Search GUI',
         toolsUsed: ['Java', 'JSwing', 'Git'],
@@ -115,7 +115,7 @@ export class ProjectInfoService {
       },
       {
         //ski mountain website
-        imageSrc: 'assets/project-images/SMV.png',
+        imageSrc: '/assets/project-images/SMV.png',
         imageAlt: 'Ski Mountain Website',
         projectTitle: 'Ski Mountain Website',
         toolsUsed: ['HTML', 'CSS', 'JavaScript', 'Git'],
@@ -129,7 +129,7 @@ export class ProjectInfoService {
       },
       {
         //vex turning point
-        imageSrc: 'assets/project-images/turningPoint.jpg',
+        imageSrc: '/assets/project-images/turningPoint.jpg',
         imageAlt: 'Vex Turning Point',
         projectTitle: 'Vex Turning Point',
         toolsUsed: ['RobotC', 'VEX Robotics'],
@@ -141,7 +141,7 @@ export class ProjectInfoService {
       },
       {
         //vex marble sorter
-        imageSrc: 'assets/project-images/marbleSorter.jpg',
+        imageSrc: '/assets/project-images/marbleSorter.jpg',
         imageAlt: 'Vex Marble Sorter',
         projectTitle: 'Vex Marble Sorter',
         toolsUsed: ['RobotC', 'VEX Robotics'],
