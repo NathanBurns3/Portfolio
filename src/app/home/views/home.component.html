@@ -1,5 +1,10 @@
 <div class="topnav">
-  <button class="resume">Resume</button>
+  <button
+    class="resume"
+    onclick="window.open('../../../assets/Nathan Burns Resume.pdf', '_blank');"
+  >
+    Resume
+  </button>
   <a href="#contact"> Contact </a>
   <a href="#skills"> Skills </a>
   <a href="#projects"> Projects </a>
@@ -14,16 +19,18 @@
   <h4>Software Development Student</h4>
   <div class="btn-group">
     <ng-container *ngFor="let link of socialMediaLinks">
-      <form [action]="link.url" method="get" target="_blank">
-        <button>
-          <img
-            [src]="link.iconSrc"
-            (mouseover)="link.iconSrc = link.iconSrcHover"
-            (mouseout)="link.iconSrc = link.iconSrcDefault"
-            [alt]="link.altText"
-          />
+      <div class="buttons">
+        <button type="submit">
+          <a href="{{ link.url }}" target="_blank">
+            <img
+              [src]="link.iconSrc"
+              (mouseover)="link.iconSrc = link.iconSrcHover"
+              (mouseout)="link.iconSrc = link.iconSrcDefault"
+              [alt]="link.altText"
+            />
+          </a>
         </button>
-      </form>
+      </div>
     </ng-container>
   </div>
 </div>

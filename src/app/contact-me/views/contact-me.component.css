@@ -1,0 +1,107 @@
+#contact {
+  margin-top: 1800px;
+  margin-bottom: 100px;
+}
+
+#contact h2 {
+  color: azure;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 500%;
+  text-shadow: 0px 4px darkgrey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid azure;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background-color: grey;
+  color: azure;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:enabled:hover {
+  background-color: darkslategrey;
+  color: azure;
+  font-weight: bold;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0px 0px 10px 2px darkslategrey;
+}
+
+.contactContainer {
+  border-radius: 1em;
+  background-color: lightgrey;
+  padding: 20px;
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.alert {
+  color: red;
+  margin-top: -2.2em;
+  font-size: 0.75em;
+  margin-bottom: 01.1em;
+}
+
+button:disabled {
+  background-color: darkgrey;
+  color: darkslategray;
+  cursor: not-allowed;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 620px) {
+  #contact {
+    margin-top: -200px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #contact {
+    margin-top: -500px;
+  }
+
+  #contact h2 {
+    font-size: 400%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #contact {
+    margin-top: -800px;
+  }
+
+  #contact h2 {
+    font-size: 300%;
+  }
+}

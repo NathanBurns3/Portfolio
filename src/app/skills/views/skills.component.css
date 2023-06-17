@@ -87,7 +87,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 0.75em;
-  text-shadow: 0 0 1px rgba(240, 255, 255, 0.5);
+  text-shadow: 0 0 1px darkslategrey;
 }
 
 #logo-holder:hover .image {
@@ -96,4 +96,46 @@
 
 #logo-holder:hover .text {
   opacity: 1;
+}
+
+@media screen and (max-width: 1080px) {
+  #skills {
+    margin-top: 0px;
+  }
+
+  .row {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  #background {
+    width: 80%;
+    margin-bottom: -4em;
+  }
+
+  #logo-holder {
+    width: 20%;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+
+  #logo-holder .text {
+    font-size: 160%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #logo-holder {
+    width: 50%;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+
+  #skills {
+    margin-bottom: 3900px;
+  }
+
+  #title {
+    width: 17em;
+  }
 }

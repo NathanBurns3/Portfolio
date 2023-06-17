@@ -62,7 +62,7 @@
 
 .name-container {
   display: inline-block;
-  width: 41em;
+  width: fit-content;
 }
 
 @keyframes typing {
@@ -97,11 +97,87 @@
   height: 20px;
 }
 
-.home form {
+.buttons {
   display: inline-block;
   height: 31px;
 }
 
 .btn-group {
   margin-left: -0.5em;
+}
+
+@media (max-width: 676px) {
+  .home {
+    max-width: 30.75em;
+  }
+
+  .home h3 {
+    font-size: 22.5px;
+    margin-bottom: -48.75px;
+  }
+
+  .home h1 {
+    font-size: 75px;
+    margin-bottom: -3.75px;
+  }
+
+  .home h4 {
+    font-size: 15px;
+    margin-bottom: 18.75px;
+  }
+}
+
+@media (max-width: 517px) {
+  .home {
+    max-width: 23em;
+  }
+
+  .home h3 {
+    font-size: 16.875px;
+    margin-bottom: -36.5px;
+  }
+
+  .home h1 {
+    font-size: 56.25px;
+    margin-bottom: -2.8px;
+  }
+
+  .home h4 {
+    font-size: 11.25px;
+    margin-bottom: 14px;
+  }
+
+  .topnav a {
+    margin: 9px;
+  }
+
+  .resume {
+    margin: 8px;
+    padding: 6px;
+  }
+
+  .resume:hover {
+    padding: 6px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home {
+    max-width: 17.25em;
+  }
+
+  .home h3 {
+    font-size: 18px;
+    margin-bottom: -27.4px;
+  }
+
+  .home h1 {
+    font-size: 47px;
+    margin-bottom: -10.1px;
+  }
+
+  .home h4 {
+    font-size: 14px;
+    margin-bottom: 10.5px;
+  }
 }

@@ -6,6 +6,9 @@
   <ng-container *ngFor="let project of projectInfo">
     <div class="row">
       <div class="column">
+        <div class="hiddenSection">
+          <h1>{{ project.projectTitle }}</h1>
+        </div>
         <div class="card">
           <img
             class="Image"
@@ -27,6 +30,19 @@
               <a [href]="project.repoLink" target="_blank">GitHub Repo</a>
             </p>
           </div>
+        </div>
+        <div class="hiddenSection">
+          <h3 *ngFor="let tool of project.toolsUsed">{{ tool }}</h3>
+          <h4>
+            <ul>
+              <li *ngFor="let description of project.projectDescription">
+                {{ description }}
+              </li>
+            </ul>
+          </h4>
+          <p *ngIf="project.repoLink">
+            <a [href]="project.repoLink" target="_blank">GitHub Repo</a>
+          </p>
         </div>
       </div>
     </div>

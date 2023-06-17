@@ -1,7 +1,7 @@
 #about {
   margin: 0 auto;
-  width: 70%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 #about h2 {
@@ -17,7 +17,7 @@
 #about p {
   color: azure;
   font-size: 20px;
-  width: 25em;
+  width: 50%;
   text-align: left;
 }
 
@@ -51,18 +51,6 @@
   width: 100%;
 }
 
-/* The dots/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active,
 .dot:hover {
   background-color: #717171;
@@ -74,5 +62,87 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1225px) {
+  .imageTextContainer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .images {
+    /* display: none; */
+    float: none;
+    margin-top: 2em;
+  }
+
+  .slideshow-container {
+    /* display: none; */
+    float: none;
+    margin-top: 2em;
+  }
+
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #about h2 {
+    text-align: center;
+  }
+
+  #about p {
+    margin-top: 1em;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .break {
+    display: block;
+  }
+}
+
+@media (max-width: 505px) {
+  img {
+    width: 75% !important;
+    height: 75% !important;
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slideshow-container img.image-active {
+    width: fit-content;
+  }
+
+  .mySlides {
+    width: fit-content;
+  }
+
+  .slideshow-container {
+    width: fit-content;
+    float: none;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .slideshow-container img {
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

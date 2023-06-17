@@ -4,7 +4,6 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: sans-serif;
   /*background-color: #173042;*/
   background: linear-gradient(
@@ -15,4 +14,13 @@ body {
     #357c84 75%,
     #3f9599 100%
   );
+}
+
+html,
+body {
+  width: 100% !important;
+  min-width: 320px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
 }

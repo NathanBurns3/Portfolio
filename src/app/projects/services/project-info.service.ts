@@ -34,10 +34,11 @@ export class ProjectInfoService {
         imageAlt: 'Endless Runner',
         projectTitle: 'Endless Runner Game',
         toolsUsed: [
-          'JavaScript',
+          'Phaser',
           'Geolocation API',
           'OpenWeather API',
-          'Phaser',
+          'Postman',
+          'Javascript',
           'HTML',
           'CSS',
           'Git',

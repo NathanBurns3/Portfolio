@@ -158,3 +158,107 @@ a:hover {
 * {
   box-sizing: border-box;
 }
+
+.hiddenSection {
+  display: none;
+}
+
+@media screen and (max-width: 1368px) {
+  .column {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 1179px) {
+  .column {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .column {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #projects {
+    margin-bottom: 500px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .card:hover .hiddenText {
+    display: hidden;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .column:hover .hiddenText {
+    display: none;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .column .card:hover .Image {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+    filter: brightness(100%);
+    transform: scale(1);
+  }
+
+  .Image:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+    filter: brightness(100%);
+  }
+
+  .card {
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hiddenSection {
+    text-align: center;
+    left: 50%;
+    color: darkslategrey;
+    margin-bottom: 3em;
+    display: block;
+  }
+
+  .column {
+    background-color: darkgrey;
+    border: 5px solid azure;
+    border-radius: 3em;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  a {
+    border: 2px solid azure;
+    border-radius: 1em;
+    background-color: rgba(127, 255, 212, 0.15);
+    color: darkslategrey;
+  }
+
+  a:hover {
+    background-color: darkslategrey;
+    color: azure;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  h3 {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    margin-bottom: -1em;
+    color: white;
+    text-shadow: 0 0 5px darkslategray;
+  }
+
+  ul {
+    color: azure;
+    text-shadow: 0 0 5px darkslategray;
+  }
+}

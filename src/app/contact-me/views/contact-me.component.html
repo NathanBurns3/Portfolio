@@ -1,0 +1,64 @@
+<div id="contact">
+  <h2>Contact Me</h2>
+  <div class="contactContainer">
+    <form
+      #myForm="ngForm"
+      action="https://formsubmit.co/nate10nate@gmail.com"
+      method="POST"
+    >
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          [(ngModel)]="name"
+          name="name"
+          placeholder="Enter name"
+          #nameInput="ngModel"
+          required
+        />
+      </div>
+      <div class="alert" *ngIf="nameInput.invalid && nameInput.touched">
+        Name is required
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input
+          type="text"
+          id="email"
+          [(ngModel)]="email"
+          name="email"
+          placeholder="Enter email"
+          #emailInput="ngModel"
+          required
+        />
+      </div>
+      <div class="alert" *ngIf="emailInput.invalid && emailInput.touched">
+        Email is required
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="3"
+          [(ngModel)]="message"
+          name="message"
+          placeholder="Enter message"
+          #messageInput="ngModel"
+          required
+        ></textarea>
+      </div>
+      <div class="alert" *ngIf="messageInput.invalid && messageInput.touched">
+        A message is required
+      </div>
+      <button
+        type="submit"
+        class="button"
+        (click)="submitForm($event)"
+        [disabled]="myForm.invalid"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
