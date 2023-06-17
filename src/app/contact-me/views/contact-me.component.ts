@@ -1,19 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { Component, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'contact-me',
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.css'],
 })
-export class ContactMeComponent implements OnInit {
+export class ContactMeComponent {
+  @ViewChild('myForm') contactForm!: NgForm;
   name!: string;
   email!: string;
   message!: string;
-
-  constructor(private builder: FormBuilder) {}
-
-  ngOnInit() {}
 
   submitForm(event: Event) {
     event.preventDefault();
@@ -21,5 +18,6 @@ export class ContactMeComponent implements OnInit {
     console.log(this.name);
     console.log(this.email);
     console.log(this.message);
+    this.contactForm.resetForm();
   }
 }
