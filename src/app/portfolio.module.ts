@@ -7,6 +7,7 @@ import { ProjectsComponent } from './projects/views/projects.component';
 import { SkillsComponent } from './skills/views/skills.component';
 import { ContactMeComponent } from './contact-me/views/contact-me.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { FormsModule } from '@angular/forms';
     SkillsComponent,
     ContactMeComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [
     HomeComponent,

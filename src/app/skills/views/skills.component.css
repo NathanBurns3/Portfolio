@@ -1,5 +1,5 @@
 #skills {
-  margin-top: 3500px;
+  margin-top: 6000px;
   margin-bottom: 1500px;
   text-align: center;
 }
@@ -20,9 +20,7 @@
 .content {
   color: azure;
   list-style: none;
-  position: absolute;
   margin-top: -2em;
-  padding-left: 0;
 }
 
 .row {
@@ -96,6 +94,30 @@
 
 #logo-holder:hover .text {
   opacity: 1;
+}
+
+@media screen and (max-width: 2150px) {
+  #skills {
+    margin-top: 5500px;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  #skills {
+    margin-top: 5000px;
+  }
+}
+
+@media screen and (max-width: 1775px) {
+  #skills {
+    margin-top: 4500px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #skills {
+    margin-top: 4000px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
