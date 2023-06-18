@@ -1,5 +1,5 @@
 #contact {
-  margin-top: 1800px;
+  margin-top: 500px;
   margin-bottom: 100px;
 }
 
@@ -89,7 +89,7 @@ textarea:focus {
 
 @media screen and (max-width: 620px) {
   #contact {
-    margin-top: -200px;
+    margin-top: -2000px;
   }
 }
 

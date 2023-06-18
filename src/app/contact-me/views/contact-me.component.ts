@@ -41,10 +41,12 @@ export class ContactMeComponent {
     this.httpClient.post<any>(url, data, httpOptions).subscribe({
       next: (data) => {
         console.log('email sent' + JSON.stringify(data));
+        alert('Message Sent!');
       },
       error: (error) => {
         errorMessage = error.message;
         console.log('error!', errorMessage);
+        alert('Message Failed to Send!');
       },
     });
 
@@ -55,7 +57,6 @@ export class ContactMeComponent {
 
   submitForm(event: Event) {
     event.preventDefault();
-    alert('Message Sent!');
     console.log(this.name);
     console.log(this.email);
     console.log(this.message);

@@ -1,6 +1,5 @@
 #skills {
   margin-top: 6000px;
-  margin-bottom: 1500px;
   text-align: center;
 }
 
@@ -151,10 +150,6 @@
     width: 50%;
     margin-bottom: 2em;
     margin-top: 1em;
-  }
-
-  #skills {
-    margin-bottom: 3900px;
   }
 
   #title {
