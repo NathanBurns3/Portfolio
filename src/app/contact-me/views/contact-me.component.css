@@ -89,25 +89,17 @@ textarea:focus {
 
 @media screen and (max-width: 620px) {
   #contact {
-    margin-top: -2000px;
+    margin-top: 500px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  #contact {
-    margin-top: -500px;
-  }
-
   #contact h2 {
     font-size: 400%;
   }
 }
 
 @media screen and (max-width: 460px) {
-  #contact {
-    margin-top: -800px;
-  }
-
   #contact h2 {
     font-size: 300%;
   }
