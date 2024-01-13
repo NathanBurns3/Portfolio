@@ -73,6 +73,16 @@ export class SkillIconService {
         skillName: 'Angular',
       },
       {
+        imageSrc: './assets/skills-icons/frameworks/maui.png',
+        imageAlt: '.NET MAUI',
+        skillName: '.NET MAUI',
+      },
+      {
+        imageSrc: './assets/skills-icons/frameworks/xamarin.png',
+        imageAlt: 'Xamarin',
+        skillName: 'Xamarin',
+      },
+      {
         imageSrc: './assets/skills-icons/frameworks/Phaser.png',
         imageAlt: 'Phaser',
         skillName: 'Phaser',
@@ -171,6 +181,11 @@ export class SkillIconService {
         imageSrc: './assets/skills-icons/software/Jira.png',
         imageAlt: 'Jira',
         skillName: 'Jira',
+      },
+      {
+        imageSrc: './assets/skills-icons/software/ado.jpeg',
+        imageAlt: 'Azure DevOps',
+        skillName: 'Azure DevOps',
       },
       {
         imageSrc: './assets/skills-icons/software/VisualStudio.png',
