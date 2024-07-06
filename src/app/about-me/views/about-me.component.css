@@ -5,144 +5,72 @@
 }
 
 #about h2 {
-  color: darkgrey;
-  font-size: 50px;
+  color: #fff;
+  font-size: 2.5em;
   text-align: left;
-  text-shadow: 0px 2px azure;
-  margin-bottom: -0.1em;
-  width: fit-content;
-  border-bottom: 0.05em solid azure;
-}
-
-#about p {
-  color: azure;
-  font-size: 20px;
-  width: 50%;
-  text-align: left;
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5em;
+  border-bottom: 0.1em solid #fff;
+  padding-bottom: 0.2em;
 }
 
 .imageTextContainer {
   display: flex;
+  gap: 2em;
+  align-items: center;
 }
 
-.mySlides {
-  display: inline-block;
+.text-content {
+  flex: 1;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.6;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  border-radius: 0.5em;
 }
 
 .slideshow-container {
+  flex: 1;
   position: relative;
-  margin: auto;
   text-align: center;
-  width: 30em;
-  float: right;
 }
 
 .slideshow-container img {
   display: none;
-  border-style: solid;
-  border-width: 0.75em;
-  border-color: azure;
+  border: 0.75em solid #fff;
   border-radius: 0.75em;
-  margin-left: 1em;
+  width: 100%;
 }
 
 .slideshow-container img.image-active {
   display: block;
-  width: 100%;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 @media (max-width: 1225px) {
   .imageTextContainer {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     text-align: center;
-    width: 100%;
   }
 
-  .images {
-    /* display: none; */
-    float: none;
-    margin-top: 2em;
+  .text-content {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .slideshow-container {
-    /* display: none; */
-    float: none;
-    margin-top: 2em;
-  }
-
-  #about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #about h2 {
-    text-align: center;
-  }
-
-  #about p {
-    margin-top: 1em;
     width: 90%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .break {
-    display: block;
+    margin: 2em auto 0;
   }
 }
 
 @media (max-width: 505px) {
-  img {
-    width: 75% !important;
-    height: 75% !important;
-    float: none !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .slideshow-container img.image-active {
-    width: fit-content;
-  }
-
-  .mySlides {
-    width: fit-content;
-  }
-
-  .slideshow-container {
-    width: fit-content;
-    float: none;
-    position: relative;
-    margin: 0 auto;
-  }
-
   .slideshow-container img {
-    width: fit-content;
-    display: block;
+    width: 75%;
     margin: 0 auto;
   }
 
-  .images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .text-content {
+    width: 100%;
   }
 }

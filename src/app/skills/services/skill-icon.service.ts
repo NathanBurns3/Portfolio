@@ -53,6 +53,11 @@ export class SkillIconService {
   getFrameworks(): ISkillIcon[] {
     return [
       {
+        imageSrc: './assets/skills-icons/frameworks/Angular.png',
+        imageAlt: 'Angular',
+        skillName: 'Angular',
+      },
+      {
         imageSrc: './assets/skills-icons/frameworks/Net.png',
         imageAlt: '.NET Core',
         skillName: '.NET Core',
@@ -68,11 +73,6 @@ export class SkillIconService {
         skillName: 'Entity',
       },
       {
-        imageSrc: './assets/skills-icons/frameworks/Angular.png',
-        imageAlt: 'Angular',
-        skillName: 'Angular',
-      },
-      {
         imageSrc: './assets/skills-icons/frameworks/maui.png',
         imageAlt: '.NET MAUI',
         skillName: '.NET MAUI',
@@ -83,24 +83,24 @@ export class SkillIconService {
         skillName: 'Xamarin',
       },
       {
+        imageSrc: './assets/skills-icons/frameworks/Bootstrap.png',
+        imageAlt: 'Bootstrap',
+        skillName: 'Bootstrap',
+      },
+      {
+        imageSrc: './assets/skills-icons/frameworks/Tailwind.png',
+        imageAlt: 'Tailwind CSS',
+        skillName: 'Tailwind CSS',
+      },
+      {
         imageSrc: './assets/skills-icons/frameworks/Phaser.png',
         imageAlt: 'Phaser',
         skillName: 'Phaser',
       },
       {
-        imageSrc: './assets/skills-icons/frameworks/JSwing.png',
-        imageAlt: 'JSwing',
-        skillName: 'JSwing',
-      },
-      {
         imageSrc: './assets/skills-icons/frameworks/JUnit.png',
         imageAlt: 'JUnit',
         skillName: 'JUnit',
-      },
-      {
-        imageSrc: './assets/skills-icons/frameworks/JavaFx.png',
-        imageAlt: 'JavaFX',
-        skillName: 'JavaFX',
       },
     ];
   }

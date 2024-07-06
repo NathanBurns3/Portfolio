@@ -8,27 +8,6 @@ export class ProjectInfoService {
   getProjectInfo(): IProjectInfo[] {
     return [
       {
-        //web api
-        imageSrc: './assets/project-images/WebAPI.png',
-        imageAlt: 'Web API',
-        projectTitle: 'Web API',
-        toolsUsed: [
-          'C#',
-          'ASP.NET Core',
-          'Entity Framework Core',
-          'SQL Server',
-          'Postman',
-          'NSwag',
-          'Git',
-        ],
-        projectDescription: [
-          'Developed a Web API using ASP.NET, with 4 controllers and Entity Framework Core for seamless database connectivity',
-          'Utilized the NSwag library to view controllers and their actions',
-          'Implemented CRUD operations for each controller, ensuring smooth handling of HTTP requests',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/WebAPI',
-      },
-      {
         //endless runner
         imageSrc: './assets/project-images/ERG.png',
         imageAlt: 'Endless Runner',
@@ -50,6 +29,61 @@ export class ProjectInfoService {
         repoLink: 'https://github.com/NathanBurns3/Endless-Runner-Game',
       },
       {
+        //sports text
+        imageSrc: './assets/project-images/sportsText.png',
+        imageAlt: 'Sports Text Script',
+        projectTitle: 'Sports Text Script',
+        toolsUsed: ['Python', 'ESPN API', 'Twilio API', 'CronTab', 'Git'],
+        projectDescription: [
+          'Developed a Python script to interact with the ESPN API for retrieving daily sports information',
+          'Integrated the Twilio API to send automated text messages containing sports updates',
+          'Configured a Raspberry Pi as a dedicated server to host the script',
+          'Utilized crontab scheduling to ensure the script runs daily for delivering timely updates',
+        ],
+        repoLink: 'https://github.com/NathanBurns3/Sports-Text',
+      },
+      {
+        //crypto tracker
+        imageSrc: './assets/project-images/CryptoTracker.png',
+        imageAlt: 'Crypto Tracker Mobile App',
+        projectTitle: 'Crypto Tracker Mobile App',
+        toolsUsed: [
+          'Xamarin.Forms',
+          'C#',
+          'XAML',
+          'Ethercan API',
+          'SQLite',
+          'Git',
+        ],
+        projectDescription: [
+          'Developed a coin tracking app using Xamarin.Forms (C# backend, XAML frontend) for cross-platform use, integrating Etherscan APIs for real-time crypto data',
+          'Enabled dynamic UI customization, allowing users to personalize themes and font sizes',
+          'Used SQLite for efficient data storage and retrieval, supporting asynchronous operations',
+        ],
+        repoLink: 'https://github.com/NathanBurns3/Cryptocurrency-Tracker',
+      },
+      {
+        //web api
+        imageSrc: './assets/project-images/WebAPI.png',
+        imageAlt: 'Web API',
+        projectTitle: 'Web API',
+        toolsUsed: [
+          'C#',
+          'ASP.NET Core',
+          'Entity Framework Core',
+          'SQL Server',
+          'Postman',
+          'NSwag',
+          'Git',
+        ],
+        projectDescription: [
+          'Developed a Web API using ASP.NET, with 4 controllers and Entity Framework Core for seamless database connectivity',
+          'Utilized the NSwag library to view controllers and their actions',
+          'Implemented CRUD operations for each controller, ensuring smooth handling of HTTP requests',
+        ],
+        repoLink: 'https://github.com/NathanBurns3/WebAPI',
+      },
+      {
         //student scores gui
         imageSrc: './assets/project-images/SS.png',
         imageAlt: 'Student Scores GUI',
@@ -65,32 +99,6 @@ export class ProjectInfoService {
         repoLink: 'https://github.com/NathanBurns3/StudentScores-WindowsForm',
       },
       {
-        //sports text
-        imageSrc: './assets/project-images/sportsText.png',
-        imageAlt: 'Sports Text Script',
-        projectTitle: 'Sports Text Script',
-        toolsUsed: ['Python', 'ESPN API', 'Twilio API', 'CronTab', 'Git'],
-        projectDescription: [
-          'Developed a Python script to interact with the ESPN API for retrieving daily sports information',
-          'Integrated the Twilio API to send automated text messages containing sports updates',
-          'Configured a Raspberry Pi as a dedicated server to host the script',
-          'Utilized crontab scheduling to ensure the script runs daily for delivering timely updates',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/Sports-Text',
-      },
-      {
-        //name api
-        imageSrc: './assets/project-images/nameAPI.png',
-        imageAlt: 'Name API',
-        projectTitle: 'Name API',
-        toolsUsed: ['C#', 'ASP.NET Core', 'Postman', 'NSwag', 'Git'],
-        projectDescription: [
-          'Developed a web API using ASP.NET and Entity Framework Core for database connectivity',
-          'Implemented a GET HTTP request that returns a name',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/NameAPI',
-      },
-      {
         //database design
         imageSrc: './assets/project-images/databaseDesign.png',
         imageAlt: 'Database Design',
@@ -103,18 +111,6 @@ export class ProjectInfoService {
           'Developed custom queries to extract specific data based on client requirements and time periods, providing valuable insights for analysis and reporting',
           'Contributed to improving data management and decision-making processes for the consulting company',
         ],
-      },
-      {
-        //asynchronous programming
-        imageSrc: './assets/project-images/Async.png',
-        imageAlt: 'Asynchronous Programming',
-        projectTitle: 'Asynchronous Program',
-        toolsUsed: ['C#', '.NET Core', 'Git'],
-        projectDescription: [
-          'Developed an application using .NET Core that takes in two text files and asynchronously processes each file',
-          'Displays the 10 most used words for each book',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/AsyncAwait-WindowsForm',
       },
       {
         //recurisve file lister
@@ -140,20 +136,6 @@ export class ProjectInfoService {
           'When the requested string was absent, provided the position it would occupy for future input data efficiency',
         ],
         repoLink: 'https://github.com/NathanBurns3/Lab-10-Binary-Search',
-      },
-      {
-        //ski mountain website
-        imageSrc: './assets/project-images/SMV.png',
-        imageAlt: 'Ski Mountain Website',
-        projectTitle: 'Ski Mountain Website',
-        toolsUsed: ['HTML', 'CSS', 'JavaScript', 'Git'],
-        projectDescription: [
-          'Designed and developed a responsive website using HTML, CSS, and JavaScript',
-          'Included animations and interactive features',
-          'Conducted research on US ski resorts and compiled data to assist users in selecting suitable ski packages',
-        ],
-        repoLink:
-          'https://github.com/NathanBurns3/Ski-Mountain-Vacation-Website',
       },
       {
         //vex turning point
