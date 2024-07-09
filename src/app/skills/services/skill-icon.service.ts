@@ -58,6 +58,16 @@ export class SkillIconService {
         skillName: 'Angular',
       },
       {
+        imageSrc: './assets/skills-icons/frameworks/NodeJS.png',
+        imageAlt: 'Node.js',
+        skillName: 'Node.js',
+      },
+      {
+        imageSrc: './assets/skills-icons/frameworks/ExpressJS.png',
+        imageAlt: 'Express.js',
+        skillName: 'Express.js',
+      },
+      {
         imageSrc: './assets/skills-icons/frameworks/Net.png',
         imageAlt: '.NET Core',
         skillName: '.NET Core',
@@ -102,6 +112,16 @@ export class SkillIconService {
         imageAlt: 'JUnit',
         skillName: 'JUnit',
       },
+      {
+        imageSrc: './assets/skills-icons/frameworks/JSwing.png',
+        imageAlt: 'Java Swing',
+        skillName: 'Java Swing',
+      },
+      {
+        imageSrc: './assets/skills-icons/frameworks/JavaFx.png',
+        imageAlt: 'JavaFX',
+        skillName: 'JavaFX',
+      },
     ];
   }
 
@@ -111,6 +131,16 @@ export class SkillIconService {
         imageSrc: './assets/skills-icons/databases/SQL.png',
         imageAlt: 'SQL',
         skillName: 'SQL',
+      },
+      {
+        imageSrc: './assets/skills-icons/databases/MongoDB.png',
+        imageAlt: 'MongoDB',
+        skillName: 'MongoDB',
+      },
+      {
+        imageSrc: './assets/skills-icons/databases/SQLite.png',
+        imageAlt: 'SQLite',
+        skillName: 'SQLite',
       },
       {
         imageSrc: './assets/skills-icons/databases/LINQ.png',
