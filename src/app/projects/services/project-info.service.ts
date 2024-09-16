@@ -8,39 +8,34 @@ export class ProjectInfoService {
   getProjectInfo(): IProjectInfo[] {
     return [
       {
-        //endless runner
-        imageSrc: './assets/project-images/ERG.png',
-        imageAlt: 'Endless Runner',
-        projectTitle: 'Endless Runner Game',
+        // fitness tracker
+        imageSrc: './assets/project-images/ActiveLifeTracker.png',
+        imageAlt: 'ActiveLife Tracker',
+        projectTitle: 'ActiveLife Tracker',
         toolsUsed: [
-          'Phaser',
-          'Geolocation API',
-          'OpenWeather API',
-          'Postman',
-          'Javascript',
-          'HTML',
-          'CSS',
+          'Angular',
+          'Node.js',
+          'Express.js',
+          'MongoDB',
+          'JWTs',
+          'RxJS',
           'Git',
+          'Jest',
+          'Cron',
+          'MongoDB Atlas',
+          'MongoDB Compass',
+          'FDA FoodData Central API',
+          'Tailwind CSS',
+          'Postman',
         ],
         projectDescription: [
-          'Created a 2D game using JavaScript and the Phaser framework',
-          "Incorporated Geolocation and Weather APIs to fetch real-time data and dynamically modify the game's appearance",
+          'Developed a full stack fitness tracking web application using the MEAN tech stack (MongoDB, Express.js, Angular, Node.js)',
+          'Implemented custom user authentication using JWTs for secure sign-in and data protection. Cached user data to enhance API call performance. Designed an algorithm to generate personalized macro plans based on user characteristics',
+          'Built dynamic charts for daily, monthly, and yearly exercise and nutritional breakdowns, integrated the FDA FoodData Central API for food item lookup, and utilized MongoDB Atlas and MongoDB Compass for database management',
+          'Conducted API testing with Postman, styled the app using Tailwind CSS, and utilized RxJS for reactive programming',
+          'Created unit tests with Jest to ensure functionality, and added cron automation for periodically updating user data',
+          'Managed source code with Git, achieving active user engagement across multiple college campuses',
         ],
-        repoLink: 'https://github.com/NathanBurns3/Endless-Runner-Game',
-      },
-      {
-        //sports text
-        imageSrc: './assets/project-images/sportsText.png',
-        imageAlt: 'Sports Text Script',
-        projectTitle: 'Sports Text Script',
-        toolsUsed: ['Python', 'ESPN API', 'Twilio API', 'CronTab', 'Git'],
-        projectDescription: [
-          'Developed a Python script to interact with the ESPN API for retrieving daily sports information',
-          'Integrated the Twilio API to send automated text messages containing sports updates',
-          'Configured a Raspberry Pi as a dedicated server to host the script',
-          'Utilized crontab scheduling to ensure the script runs daily for delivering timely updates',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/Sports-Text',
       },
       {
         //crypto tracker
@@ -61,6 +56,41 @@ export class ProjectInfoService {
           'Used SQLite for efficient data storage and retrieval, supporting asynchronous operations',
         ],
         repoLink: 'https://github.com/NathanBurns3/Cryptocurrency-Tracker',
+      },
+      {
+        //sports text
+        imageSrc: './assets/project-images/sportsText.png',
+        imageAlt: 'Sports Text Script',
+        projectTitle: 'Sports Text Script',
+        toolsUsed: ['Python', 'ESPN API', 'Twilio API', 'CronTab', 'Git'],
+        projectDescription: [
+          'Developed a Python script to interact with the ESPN API for retrieving daily sports information',
+          'Integrated the Twilio API to send automated text messages containing sports updates',
+          'Configured a Raspberry Pi as a dedicated server to host the script',
+          'Utilized crontab scheduling to ensure the script runs daily for delivering timely updates',
+        ],
+        repoLink: 'https://github.com/NathanBurns3/Sports-Text',
+      },
+      {
+        //endless runner
+        imageSrc: './assets/project-images/ERG.png',
+        imageAlt: 'Endless Runner',
+        projectTitle: 'Endless Runner Game',
+        toolsUsed: [
+          'Phaser',
+          'Geolocation API',
+          'OpenWeather API',
+          'Postman',
+          'Javascript',
+          'HTML',
+          'CSS',
+          'Git',
+        ],
+        projectDescription: [
+          'Created a 2D game using JavaScript and the Phaser framework',
+          "Incorporated Geolocation and Weather APIs to fetch real-time data and dynamically modify the game's appearance",
+        ],
+        repoLink: 'https://github.com/NathanBurns3/Endless-Runner-Game',
       },
       {
         //web api
@@ -147,17 +177,6 @@ export class ProjectInfoService {
           'Collaborated with a team to design a robot for a fast-paced point system game',
           'Mapped controller buttons to robot motors and gears',
           'Coded an autonomous program in RobotC to position the robot and navigate various platforms',
-        ],
-      },
-      {
-        //vex marble sorter
-        imageSrc: './assets/project-images/marbleSorter.jpg',
-        imageAlt: 'Vex Marble Sorter',
-        projectTitle: 'Vex Marble Sorter',
-        toolsUsed: ['RobotC', 'VEX Robotics'],
-        projectDescription: [
-          'Given a task to design and construct a machine to help recycle materials',
-          'Coded a program in RobotC that would sense the light given off an object and sort it into assigned slots',
         ],
       },
     ];

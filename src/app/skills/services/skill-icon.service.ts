@@ -143,6 +143,11 @@ export class SkillIconService {
         skillName: 'SQLite',
       },
       {
+        imageSrc: './assets/skills-icons/databases/MySQL.png',
+        imageAlt: 'MySQL',
+        skillName: 'MySQL',
+      },
+      {
         imageSrc: './assets/skills-icons/databases/LINQ.png',
         imageAlt: 'LINQ',
         skillName: 'LINQ',
@@ -201,6 +206,11 @@ export class SkillIconService {
         imageSrc: './assets/skills-icons/software/Postman.png',
         imageAlt: 'Postman',
         skillName: 'Postman',
+      },
+      {
+        imageSrc: './assets/skills-icons/software/Jupyter.png',
+        imageAlt: 'Jupyter',
+        skillName: 'Jupyter',
       },
       {
         imageSrc: './assets/skills-icons/software/Docker.png',
