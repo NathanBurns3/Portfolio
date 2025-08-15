@@ -22,6 +22,6 @@ export class SkillsComponent {
     this.frameworks = this.skillIconService.getFrameworks();
     this.databases = this.skillIconService.getDatabases();
     this.operatingSystems = this.skillIconService.getOperatingSystems();
-    this.softwares = this.skillIconService.getSofwares();
+    this.softwares = this.skillIconService.getSoftwares();
   }
 }
