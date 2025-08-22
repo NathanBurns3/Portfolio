@@ -18,7 +18,6 @@ export class ProjectInfoService {
           'Express.js',
           'MongoDB',
           'AWS EC2',
-          'Vercel',
           'NGINX',
           'JWTs',
           'bcrypt',

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { PortraitPhotoService } from '../services/portrait-photos.service';
 import { IPortraitPhoto } from '../models/portrait-photos';
 
@@ -7,26 +7,47 @@ import { IPortraitPhoto } from '../models/portrait-photos';
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.css'],
 })
-export class AboutMeComponent implements OnInit {
+export class AboutMeComponent implements OnInit, AfterViewInit {
   selectedindex = 1;
+  private observer?: IntersectionObserver;
 
   slideShow() {
-    console.log('slideshow');
-    var i;
-    var x = document.getElementsByClassName('mySlides');
-    for (i = 0; i < x.length; i++) {
-      (x[i] as HTMLElement).style.display = 'none';
+    const x = document.getElementsByClassName('mySlides');
+    for (let i = 0; i < x.length; i++) {
+      (x[i] as HTMLElement).classList.remove('image-active');
     }
     if (this.selectedindex >= x.length) {
       this.selectedindex = 1;
     } else {
       this.selectedindex++;
     }
-    (x[this.selectedindex - 1] as HTMLElement).style.display = 'block';
-    setTimeout(this.slideShow.bind(this), 2000); // Change image every 2 seconds */
+    (x[this.selectedindex - 1] as HTMLElement).classList.add('image-active');
+    setTimeout(this.slideShow.bind(this), 2000);
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.slideShow();
+  }
+
+  ngAfterViewInit(): void {
+    // Animate About section and text on scroll
+    const aboutSection = document.getElementById('about');
+    const textContent = document.querySelector('.text-content');
+    const slideshow = document.querySelector('.slideshow-container');
+    if (aboutSection && textContent && slideshow) {
+      this.observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              aboutSection.classList.add('about-animate');
+              textContent.classList.add('text-animate');
+              slideshow.classList.add('slideshow-animate');
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+      this.observer.observe(aboutSection);
+    }
   }
 }

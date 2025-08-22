@@ -18,8 +18,11 @@
   </div>
   <h4>Software Development Student</h4>
   <div class="btn-group">
-    <ng-container *ngFor="let link of socialMediaLinks">
-      <div class="buttons">
+    <ng-container *ngFor="let link of socialMediaLinks; let i = index">
+      <div
+        class="buttons"
+        [ngStyle]="{ 'animation-delay': 3.2 + i * 0.2 + 's' }"
+      >
         <button type="submit">
           <a href="{{ link.url }}" target="_blank">
             <img

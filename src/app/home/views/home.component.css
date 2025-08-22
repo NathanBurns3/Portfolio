@@ -10,11 +10,27 @@
   text-decoration: none;
   font-size: 15px;
   margin: 20px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInDownHeader 0.8s forwards;
 }
 
 .topnav a:hover {
   color: aquamarine;
   text-decoration: underline;
+}
+
+.topnav a:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.topnav a:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.topnav a:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.topnav a:nth-child(5) {
+  animation-delay: 0.8s;
 }
 
 .resume {
@@ -25,6 +41,9 @@
   color: aquamarine;
   background-color: transparent;
   margin: 15px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInDownHeader 0.8s forwards;
 }
 
 .resume:hover {
@@ -46,6 +65,19 @@
   color: darkgrey;
   font-size: 30px;
   margin-bottom: -65px;
+  opacity: 0;
+  animation: fadeInUp 1.2s 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .home h1 {
@@ -62,7 +94,7 @@
 
 .name-container {
   display: inline-block;
-  width: fit-content;
+  width: -webkit-fill-available;
 }
 
 @keyframes typing {
@@ -83,6 +115,19 @@
   color: aquamarine;
   margin-bottom: 25px;
   font-size: 20px;
+  opacity: 0;
+  animation: fadeInSubtitle 2s 2.5s forwards;
+}
+
+@keyframes fadeInSubtitle {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .home button {
@@ -90,11 +135,13 @@
   border: none;
   margin: 4px;
   height: 23px;
+  transition: transform 0.2s cubic-bezier(0.4, 2, 0.3, 1), box-shadow 0.2s;
 }
 
 .home img {
   width: 20px;
   height: 20px;
+  transition: transform 0.2s cubic-bezier(0.4, 2, 0.3, 1), box-shadow 0.2s;
 }
 
 .buttons {
@@ -104,11 +151,59 @@
 
 .btn-group {
   margin-left: -0.5em;
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn-group .buttons {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUpBtn 0.8s forwards;
+}
+
+.btn-group .buttons:nth-child(1) {
+  animation-delay: 3.2s;
+}
+.btn-group .buttons:nth-child(2) {
+  animation-delay: 3.4s;
+}
+.btn-group .buttons:nth-child(3) {
+  animation-delay: 3.6s;
+}
+.btn-group .buttons:nth-child(4) {
+  animation-delay: 3.8s;
+}
+.btn-group .buttons:nth-child(5) {
+  animation-delay: 4s;
+}
+
+@keyframes fadeInUpBtn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDownHeader {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 676px) {
   .home {
     max-width: 30.75em;
+    padding: 32px 16px 16px 16px;
   }
 
   .home h3 {
@@ -130,6 +225,7 @@
 @media (max-width: 517px) {
   .home {
     max-width: 23em;
+    padding: 16px 8px 8px 8px;
   }
 
   .home h3 {
@@ -164,6 +260,7 @@
 @media (max-width: 400px) {
   .home {
     max-width: 17.25em;
+    padding: 8px 4px 4px 4px;
   }
 
   .home h3 {

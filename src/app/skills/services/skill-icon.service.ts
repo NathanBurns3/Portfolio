@@ -160,7 +160,7 @@ export class SkillIconService {
       {
         imageSrc: './assets/skills-icons/databases/PostgreSQL.png',
         imageAlt: 'PostgreSQL',
-        skillName: 'PostgreSQL',
+        skillName: 'Postgre SQL',
       },
       {
         imageSrc: './assets/skills-icons/databases/MySQL.png',

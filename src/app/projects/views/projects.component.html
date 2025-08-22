@@ -7,40 +7,40 @@
         <div class="hiddenSection">
           <h1>{{ project.projectTitle }}</h1>
         </div>
-        <div class="card">
-          <img
-            class="Image"
-            [src]="project.imageSrc"
-            [alt]="project.imageAlt"
-            style="width: 100%"
-          />
-          <div class="hiddenText">
-            <h1>{{ project.projectTitle }}</h1>
-            <h3 *ngFor="let tool of project.toolsUsed">{{ tool }}</h3>
-            <h4>
-              <ul>
-                <li *ngFor="let description of project.projectDescription">
-                  {{ description }}
-                </li>
-              </ul>
-            </h4>
-            <p *ngIf="project.repoLink">
-              <a [href]="project.repoLink" target="_blank">GitHub Repo</a>
-            </p>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                class="Image"
+                [src]="project.imageSrc"
+                [alt]="project.imageAlt"
+                style="width: 100%"
+              />
+            </div>
+            <div class="flip-card-back">
+              <img
+                class="card-bg-image"
+                [src]="project.imageSrc"
+                [alt]="project.imageAlt"
+              />
+              <div class="card-bg-content">
+                <h1>{{ project.projectTitle }}</h1>
+                <div class="tools-list">
+                  <h3 *ngFor="let tool of project.toolsUsed">{{ tool }}</h3>
+                </div>
+                <h4>
+                  <ul>
+                    <li *ngFor="let description of project.projectDescription">
+                      {{ description }}
+                    </li>
+                  </ul>
+                </h4>
+                <p *ngIf="project.repoLink">
+                  <a [href]="project.repoLink" target="_blank">GitHub Repo</a>
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="hiddenSection">
-          <h3 *ngFor="let tool of project.toolsUsed">{{ tool }}</h3>
-          <h4>
-            <ul>
-              <li *ngFor="let description of project.projectDescription">
-                {{ description }}
-              </li>
-            </ul>
-          </h4>
-          <p *ngIf="project.repoLink">
-            <a [href]="project.repoLink" target="_blank">GitHub Repo</a>
-          </p>
         </div>
       </div>
     </div>
