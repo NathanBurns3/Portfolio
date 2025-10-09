@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(
     160deg,
     #173042 0%,
@@ -22,4 +22,8 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   overflow-x: hidden;
+}
+
+section {
+  scroll-margin-top: 80px;
 }
