@@ -1,5 +1,5 @@
 #skills {
-  margin-top: 6000px;
+  margin-top: 2500px;
   text-align: center;
 }
 
@@ -103,25 +103,25 @@
 
 @media screen and (max-width: 2150px) {
   #skills {
-    margin-top: 5500px;
+    margin-top: 2500px;
   }
 }
 
 @media screen and (max-width: 2000px) {
   #skills {
-    margin-top: 5000px;
+    margin-top: 3300px;
   }
 }
 
 @media screen and (max-width: 1775px) {
   #skills {
-    margin-top: 4500px;
+    margin-top: 2800px;
   }
 }
 
 @media screen and (max-width: 1600px) {
   #skills {
-    margin-top: 4000px;
+    margin-top: 2500px;
   }
 }
 

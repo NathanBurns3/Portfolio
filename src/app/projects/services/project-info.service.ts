@@ -90,42 +90,6 @@ export class ProjectInfoService {
         repoLink: 'https://github.com/NathanBurns3/Endless-Runner-Game',
       },
       {
-        //web api
-        imageSrc: './assets/project-images/WebAPI.png',
-        imageAlt: 'Web API',
-        projectTitle: 'Web API',
-        toolsUsed: [
-          'C#',
-          'ASP.NET Core',
-          'Entity Framework Core',
-          'SQL Server',
-          'Postman',
-          'NSwag',
-          'Git',
-        ],
-        projectDescription: [
-          'Developed a Web API using ASP.NET, with 4 controllers and Entity Framework Core for seamless database connectivity',
-          'Utilized the NSwag library to view controllers and their actions',
-          'Implemented CRUD operations for each controller, ensuring smooth handling of HTTP requests',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/WebAPI',
-      },
-      {
-        //student scores gui
-        imageSrc: './assets/project-images/SS.png',
-        imageAlt: 'Student Scores GUI',
-        projectTitle: 'Student Scores GUI',
-        toolsUsed: ['C#', '.NET Core', 'Entity Framework Core', 'Git'],
-        projectDescription: [
-          'Developed a .NET Core application that utilizes Entity Framework Core for database connectivity',
-          'the application acts as a gradebook with student information, grades, calculated scores, and averages',
-          'Users can add, edit, and delete students from the database',
-          'Utilized the ICloneable Interface for deep copying of student objects during updates, allowing changes to be saved only when accepted',
-          'Built with encapsulated forms for easy navigation between operations',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/StudentScores-WindowsForm',
-      },
-      {
         //database design
         imageSrc: './assets/project-images/databaseDesign.png',
         imageAlt: 'Database Design',
@@ -150,31 +114,6 @@ export class ProjectInfoService {
           'Uses a recursive approach to list all the files within the chosen directory and any of its sub-directories',
         ],
         repoLink: 'https://github.com/NathanBurns3/Lab-11-Recursive-Filelister',
-      },
-      {
-        //binary search gui
-        imageSrc: './assets/project-images/BinarySearch.png',
-        imageAlt: 'Binary Search GUI',
-        projectTitle: 'Binary Search GUI',
-        toolsUsed: ['Java', 'JSwing', 'Git'],
-        projectDescription: [
-          'Developed a custom binary search algorithm for efficient string searching in an array',
-          'Facilitated user input of strings, sorting them in ascending order for improved searchability',
-          'When the requested string was absent, provided the position it would occupy for future input data efficiency',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/Lab-10-Binary-Search',
-      },
-      {
-        //vex turning point
-        imageSrc: './assets/project-images/turningPoint.jpg',
-        imageAlt: 'Vex Turning Point',
-        projectTitle: 'Vex Turning Point',
-        toolsUsed: ['RobotC', 'VEX Robotics'],
-        projectDescription: [
-          'Collaborated with a team to design a robot for a fast-paced point system game',
-          'Mapped controller buttons to robot motors and gears',
-          'Coded an autonomous program in RobotC to position the robot and navigate various platforms',
-        ],
       },
     ];
   }

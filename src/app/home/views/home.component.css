@@ -13,6 +13,7 @@
   opacity: 0;
   transform: translateY(-30px);
   animation: fadeInDownHeader 0.8s forwards;
+  font-weight: bold;
 }
 
 .topnav a:hover {
