@@ -98,11 +98,6 @@ export class SkillIconService {
         skillName: 'ASP.NET Core',
       },
       {
-        imageSrc: './assets/skills-icons/frameworks/xamarin.png',
-        imageAlt: 'Xamarin',
-        skillName: 'Xamarin',
-      },
-      {
         imageSrc: './assets/skills-icons/frameworks/RxJS.png',
         imageAlt: 'RxJS',
         skillName: 'RxJS',
@@ -128,24 +123,9 @@ export class SkillIconService {
         skillName: 'Jest',
       },
       {
-        imageSrc: './assets/skills-icons/frameworks/Phaser.png',
-        imageAlt: 'Phaser',
-        skillName: 'Phaser',
-      },
-      {
         imageSrc: './assets/skills-icons/frameworks/JUnit.png',
         imageAlt: 'JUnit',
         skillName: 'JUnit',
-      },
-      {
-        imageSrc: './assets/skills-icons/frameworks/JSwing.png',
-        imageAlt: 'Java Swing',
-        skillName: 'Java Swing',
-      },
-      {
-        imageSrc: './assets/skills-icons/frameworks/JavaFx.png',
-        imageAlt: 'JavaFX',
-        skillName: 'JavaFX',
       },
     ];
   }

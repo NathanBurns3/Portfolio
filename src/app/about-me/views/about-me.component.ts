@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 import { PortraitPhotoService } from '../services/portrait-photos.service';
 import { IPortraitPhoto } from '../models/portrait-photos';
 
@@ -7,9 +7,10 @@ import { IPortraitPhoto } from '../models/portrait-photos';
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.css'],
 })
-export class AboutMeComponent implements OnInit, AfterViewInit {
+export class AboutMeComponent implements OnInit, AfterViewInit, OnDestroy {
   selectedindex = 1;
   private observer?: IntersectionObserver;
+  isVisible = false;
 
   slideShow() {
     const x = document.getElementsByClassName('mySlides');
@@ -30,24 +31,26 @@ export class AboutMeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    // Animate About section and text on scroll
     const aboutSection = document.getElementById('about');
-    const textContent = document.querySelector('.text-content');
-    const slideshow = document.querySelector('.slideshow-container');
-    if (aboutSection && textContent && slideshow) {
+    if (aboutSection) {
       this.observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              aboutSection.classList.add('about-animate');
-              textContent.classList.add('text-animate');
-              slideshow.classList.add('slideshow-animate');
+              this.isVisible = true;
+              aboutSection.classList.add('section-visible');
             }
           });
         },
-        { threshold: 0.3 }
+        { threshold: 0.2 }
       );
       this.observer.observe(aboutSection);
+    }
+  }
+
+  ngOnDestroy(): void {
+    if (this.observer) {
+      this.observer.disconnect();
     }
   }
 }

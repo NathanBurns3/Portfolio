@@ -1,48 +1,65 @@
+<!-- Option 2: Horizontal Timeline Layout -->
 <div id="projects">
   <h2>Projects</h2>
 
-  <ng-container *ngFor="let project of projectInfo">
-    <div class="row">
-      <div class="column">
-        <div class="hiddenSection">
-          <h1>{{ project.projectTitle }}</h1>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img
-                class="Image"
-                [src]="project.imageSrc"
-                [alt]="project.imageAlt"
-                style="width: 100%"
-              />
+  <div class="projects-timeline">
+    <ng-container *ngFor="let project of projectInfo; let i = index">
+      <div
+        class="timeline-item"
+        [attr.data-index]="i"
+        [class.reverse]="i % 2 === 1"
+      >
+        <div class="timeline-content">
+          <div class="project-info">
+            <h3 class="project-title">{{ project.projectTitle }}</h3>
+            <div class="tools-container">
+              <span class="tool-tag" *ngFor="let tool of project.toolsUsed">{{
+                tool
+              }}</span>
             </div>
-            <div class="flip-card-back">
-              <img
-                class="card-bg-image"
-                [src]="project.imageSrc"
-                [alt]="project.imageAlt"
-              />
-              <div class="card-bg-content">
-                <h1>{{ project.projectTitle }}</h1>
-                <div class="tools-list">
-                  <h3 *ngFor="let tool of project.toolsUsed">{{ tool }}</h3>
-                </div>
-                <h4>
-                  <ul>
-                    <li *ngFor="let description of project.projectDescription">
-                      {{ description }}
-                    </li>
-                  </ul>
-                </h4>
-                <p *ngIf="project.repoLink">
-                  <a [href]="project.repoLink" target="_blank">GitHub Repo</a>
-                </p>
-              </div>
+            <div class="project-details">
+              <p *ngFor="let description of project.projectDescription">
+                {{ description }}
+              </p>
             </div>
+            <div class="project-buttons">
+              <a
+                *ngIf="project.repoLink"
+                [href]="project.repoLink"
+                target="_blank"
+                class="project-btn github-btn"
+              >
+                <img
+                  src="assets/social-media-icons/github-inverse.png"
+                  alt="GitHub"
+                  class="btn-icon github-icon"
+                />
+                View on GitHub
+              </a>
+              <a
+                *ngIf="project.liveLink"
+                [href]="project.liveLink"
+                target="_blank"
+                class="project-btn live-btn"
+              >
+                <img
+                  src="assets/external-link.png"
+                  alt="External Link"
+                  class="btn-icon external-link-icon"
+                />
+                View Live Site
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <img
+              [src]="project.imageSrc"
+              [alt]="project.imageAlt"
+              class="timeline-image"
+            />
           </div>
         </div>
       </div>
-    </div>
-  </ng-container>
+    </ng-container>
+  </div>
 </div>

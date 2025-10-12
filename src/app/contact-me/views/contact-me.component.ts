@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, AfterViewInit } from '@angular/core';
 //import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FormBuilder, NgForm } from '@angular/forms';
@@ -8,12 +8,12 @@ import { FormBuilder, NgForm } from '@angular/forms';
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.css'],
 })
-export class ContactMeComponent {
+export class ContactMeComponent implements AfterViewInit {
   @ViewChild('myForm') contactForm!: NgForm;
   name!: string;
   email!: string;
   message!: string;
-  secretKey: string = 'xbjenaqb';
+  formId: string = 'xbjenaqb';
   emailForm = this.fb.group({
     name: [''],
     email: [''],
@@ -22,10 +22,52 @@ export class ContactMeComponent {
 
   constructor(private fb: FormBuilder, private httpClient: HttpClient) {}
 
+  ngAfterViewInit() {
+    this.setupScrollAnimations();
+  }
+
+  private setupScrollAnimations() {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.id === 'contact') {
+              entry.target.classList.add('section-visible');
+              this.animateContactForm();
+            }
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      observer.observe(contactSection);
+    }
+  }
+
+  private animateContactForm() {
+    const contactContainer = document.querySelector('.contactContainer');
+    const formGroups = document.querySelectorAll('.form-group');
+
+    setTimeout(() => {
+      if (contactContainer) {
+        contactContainer.classList.add('animate');
+      }
+    }, 400);
+
+    formGroups.forEach((group, index) => {
+      setTimeout(() => {
+        group.classList.add('animate');
+      }, 600 + index * 150);
+    });
+  }
+
   //Send an email using formspree.io account
   sendEmail(name: String, email: String, message: String) {
-    //Set the url with your secretKey from formspree.io
-    let url = 'https://formspree.io/f/' + this.secretKey;
+    //Set the url
+    let url = 'https://formspree.io/f/' + this.formId;
 
     //Set Headers
     const httpOptions = {
@@ -49,10 +91,6 @@ export class ContactMeComponent {
         alert('Message Failed to Send!');
       },
     });
-
-    //DEBUG
-    console.log('url is ', url);
-    console.log('data', name, email, message);
   }
 
   submitForm(event: Event) {

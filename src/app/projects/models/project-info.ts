@@ -5,4 +5,5 @@ export interface IProjectInfo {
   toolsUsed: string[];
   projectDescription: string[];
   repoLink?: string;
+  liveLink?: string;
 }

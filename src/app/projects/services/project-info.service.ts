@@ -14,7 +14,6 @@ export class ProjectInfoService {
         projectTitle: 'ActiveLife Tracker',
         toolsUsed: [
           'Angular',
-          'Node.js',
           'Express.js',
           'MongoDB',
           'AWS EC2',
@@ -33,6 +32,8 @@ export class ProjectInfoService {
           'Created interactive charts with Chart.js and Tailwind CSS, integrating the FDA FoodData Central API for real-time nutrition data',
           'Applied rate limiting, used RxJS for reactive state management, and tested with Postman and Jest using in-memory MongoDB',
         ],
+        repoLink: 'https://github.com/NathanBurns3/Fitness-Tracker',
+        liveLink: 'https://www.activelifetracker.com/login',
       },
       {
         //crypto tracker
@@ -88,20 +89,7 @@ export class ProjectInfoService {
           "Incorporated Geolocation and Weather APIs to fetch real-time data and dynamically modify the game's appearance",
         ],
         repoLink: 'https://github.com/NathanBurns3/Endless-Runner-Game',
-      },
-      {
-        //database design
-        imageSrc: './assets/project-images/databaseDesign.png',
-        imageAlt: 'Database Design',
-        projectTitle: 'Database Design',
-        toolsUsed: ['SQL', 'SQL Server Management Studio', 'LucidChart'],
-        projectDescription: [
-          'Designed and developed a normalized database for a mock Professional Service Consulting company to track their work for various clients',
-          'Implemented a schema design adhering to 3rd Normal Form principles, establishing primary and foreign key relationships between tables',
-          'Utilized SSMS and SQL to create and manage the database, ensuring efficient data organization and retrieval',
-          'Developed custom queries to extract specific data based on client requirements and time periods, providing valuable insights for analysis and reporting',
-          'Contributed to improving data management and decision-making processes for the consulting company',
-        ],
+        liveLink: 'https://nathanburns3.github.io/Endless-Runner-Game/',
       },
       {
         //recurisve file lister
