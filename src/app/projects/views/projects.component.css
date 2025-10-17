@@ -2,36 +2,27 @@
   margin-top: 500px;
   opacity: 0;
   transform: translateY(50px);
-  transition: all 1.2s ease;
+  transition: 0.8s;
 }
-
 #projects.section-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
-
-#title h2 {
-  display: flex;
-  justify-content: center;
-}
-
 h2 {
   color: azure;
   margin-bottom: 50px;
   text-align: center;
   font-size: 500%;
-  text-shadow: 0px 4px black;
+  text-shadow: 0 4px #000;
   position: relative;
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.8s ease 0.3s;
+  transition: 0.8s 0.3s;
 }
-
 #projects.section-visible h2 {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
-
 h2::after {
   content: "";
   position: absolute;
@@ -39,11 +30,10 @@ h2::after {
   left: 50%;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, aquamarine, rgba(127, 255, 212, 0.4));
+  background: linear-gradient(90deg, #7fffd4, rgba(127, 255, 212, 0.4));
   transform: translateX(-50%);
-  transition: width 1s ease 0.8s;
+  transition: width 1s 0.8s;
 }
-
 #projects.section-visible h2::after {
   width: 140px;
 }
@@ -54,7 +44,6 @@ h2::after {
   position: relative;
   padding: 2em 0;
 }
-
 .projects-timeline::before {
   content: "";
   position: absolute;
@@ -66,38 +55,33 @@ h2::after {
     180deg,
     transparent,
     rgba(127, 255, 212, 0.4) 20%,
-    aquamarine 50%,
+    #7fffd4 50%,
     rgba(127, 255, 212, 0.4) 80%,
     transparent
   );
   transform: translateX(-50%);
   box-shadow: 0 0 20px rgba(127, 255, 212, 0.3);
 }
-
 .timeline-item {
   display: flex;
   margin: 4em 0;
   align-items: center;
   opacity: 0;
   transform: translateX(-50px);
-  transition: all 0.8s ease;
+  transition: 0.8s;
 }
-
 .timeline-item.animate {
   opacity: 1;
-  transform: translateX(0);
+  transform: none;
 }
-
 .timeline-item.reverse {
   flex-direction: row-reverse;
 }
-
 .timeline-item.reverse .timeline-content {
   transform: translateX(50px);
 }
-
 .timeline-item.reverse.animate .timeline-content {
-  transform: translateX(0);
+  transform: none;
 }
 
 .timeline-content {
@@ -105,13 +89,11 @@ h2::after {
   width: 100%;
   align-items: center;
   gap: 12em;
-  transition: transform 0.8s ease;
+  transition: transform 0.8s;
 }
-
 .timeline-item.reverse .timeline-content {
   flex-direction: row-reverse;
 }
-
 .project-info {
   flex: 1;
   max-width: 450px;
@@ -124,18 +106,17 @@ h2::after {
   border: 1px solid rgba(127, 255, 212, 0.2);
   border-radius: 20px;
   backdrop-filter: blur(15px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s ease;
+  box-shadow: 0 15px 50px #0003;
+  transition: 0.5s;
   position: relative;
 }
-
 .project-info::before {
   content: "";
   position: absolute;
   top: 50%;
   width: 25px;
   height: 25px;
-  background: radial-gradient(circle, aquamarine, rgba(127, 255, 212, 0.2) 70%);
+  background: radial-gradient(circle, #7fffd4, rgba(127, 255, 212, 0.2) 70%);
   border: 3px solid #003d4d;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(127, 255, 212, 0.6),
@@ -143,57 +124,50 @@ h2::after {
   transform: translateY(-50%);
   z-index: 2;
 }
-
 .timeline-item:not(.reverse) .project-info::before {
   right: -85px;
 }
 .timeline-item.reverse .project-info::before {
   left: -85px;
 }
-
 .project-info:hover {
   transform: translateY(-8px);
   border-color: rgba(127, 255, 212, 0.4);
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.3), 0 0 40px rgba(127, 255, 212, 0.1);
+  box-shadow: 0 25px 70px #0003, 0 0 40px rgba(127, 255, 212, 0.1);
 }
 
 .project-title {
   color: azure;
   font-size: 1.6em;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1.2em;
   text-shadow: 0 2px 10px rgba(127, 255, 212, 0.3);
   position: relative;
 }
-
 .tools-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
   margin-bottom: 1.5em;
 }
-
 .tool-tag {
   background: rgba(127, 255, 212, 0.15);
-  color: aquamarine;
+  color: #7fffd4;
   padding: 0.4em 0.8em;
   border-radius: 15px;
   font-size: 0.85em;
   font-weight: 500;
   border: 1px solid rgba(127, 255, 212, 0.3);
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
-
 .tool-tag:hover {
   background: rgba(127, 255, 212, 0.25);
-  border-color: aquamarine;
+  border-color: #7fffd4;
   transform: translateY(-2px);
 }
-
 .project-details {
   margin-bottom: 2em;
 }
-
 .project-details p {
   color: #eaf6fb;
   line-height: 1.7;
@@ -202,13 +176,12 @@ h2::after {
   position: relative;
   padding-left: 1.2em;
 }
-
 .project-details p::before {
   content: "▸";
   position: absolute;
   left: 0;
-  color: aquamarine;
-  font-weight: bold;
+  color: #7fffd4;
+  font-weight: 700;
 }
 
 .project-buttons {
@@ -217,93 +190,198 @@ h2::after {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .project-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
   padding: 0.5em 1em;
-  background: linear-gradient(135deg, aquamarine, #7fffd4);
+  background: #7fffd4;
   color: #003d4d;
   text-decoration: none;
   border-radius: 15px;
-  font-weight: bold;
-  transition: all 0.4s ease;
+  font-weight: 700;
+  transition: 0.4s;
   box-shadow: 0 4px 15px rgba(127, 255, 212, 0.3);
   font-size: 0.75em;
 }
-
 .project-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(127, 255, 212, 0.5);
 }
-
 .btn-icon {
   width: 25px;
   height: 25px;
   object-fit: contain;
 }
-
 .github-icon,
 .external-link-icon {
   filter: brightness(0) saturate(100%) invert(14%) sepia(17%) saturate(1823%)
     hue-rotate(164deg) brightness(95%) contrast(92%);
 }
-
 .external-link-icon {
   width: 20px;
   height: 20px;
 }
-
 .project-visual {
   flex: 1;
   max-width: 400px;
 }
-
 .timeline-image {
   max-height: 400px;
   object-fit: contain;
   border-radius: 15px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  transition: all 0.5s ease;
+  box-shadow: 0 15px 40px #0006;
+  transition: 0.5s;
   border: 2px solid rgba(127, 255, 212, 0.2);
 }
-
 .timeline-image:hover {
   transform: scale(1.03);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 60px #0008;
   border-color: rgba(127, 255, 212, 0.4);
 }
 
+@media (max-width: 1024px) {
+  .timeline-content {
+    gap: 8em;
+  }
+  .project-info {
+    padding: 2.2em;
+  }
+  h2 {
+    font-size: 450%;
+  }
+}
+@media (max-width: 900px) {
+  .timeline-content {
+    gap: 6em;
+  }
+  .project-info {
+    padding: 2em;
+    max-width: 400px;
+  }
+  .project-visual {
+    max-width: 350px;
+  }
+  h2 {
+    font-size: 400%;
+    margin-bottom: 40px;
+  }
+}
 @media (max-width: 768px) {
   .projects-timeline::before {
-    left: 30px;
+    display: none;
+  }
+  .projects-timeline {
+    padding: 2em 1em;
   }
   .timeline-item,
   .timeline-item.reverse {
     flex-direction: column;
     text-align: center;
-    margin-left: 50px;
-    margin-bottom: 3em;
+    margin: 2em auto;
+    transform: none;
   }
   .timeline-content,
   .timeline-item.reverse .timeline-content {
     flex-direction: column;
-    gap: 1.5em;
+    gap: 0;
   }
   .project-info::before,
   .timeline-item.reverse .project-info::before {
-    left: -65px;
-    top: 2em;
+    display: none;
   }
   .project-info {
     max-width: none;
-    padding: 2em;
+    padding: 1.8em;
+    margin: 0 auto;
   }
   .project-title {
     font-size: 1.4em;
   }
-  .timeline-image {
-    height: 220px;
+  .project-visual {
+    display: none;
+  }
+  h2 {
+    font-size: 350%;
+  }
+  .tool-tag {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 600px) {
+  .project-info {
+    padding: 1.6em;
+  }
+  .project-title {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+  }
+  .project-details p {
+    font-size: 0.95em;
+  }
+  h2 {
+    font-size: 300%;
+    margin-bottom: 35px;
+  }
+  .tools-container {
+    gap: 0.4em;
+  }
+  .tool-tag {
+    padding: 0.3em 0.7em;
+    font-size: 0.75em;
+  }
+  .timeline-item,
+  .timeline-item.reverse {
+    margin: 1.8em auto;
+  }
+}
+@media (max-width: 480px) {
+  .project-info {
+    padding: 1.4em;
+  }
+  h2 {
+    font-size: 250%;
+    margin-bottom: 30px;
+  }
+  .project-title {
+    font-size: 1.2em;
+  }
+  .project-details p {
+    font-size: 0.9em;
+    padding-left: 1em;
+  }
+  .project-buttons {
+    gap: 0.8em;
+  }
+  .project-btn {
+    padding: 0.4em 0.8em;
+    font-size: 0.7em;
+  }
+  .timeline-item,
+  .timeline-item.reverse {
+    margin: 1.5em auto;
+  }
+}
+@media (max-width: 380px) {
+  .project-info {
+    padding: 1.2em;
+  }
+  h2 {
+    font-size: 220%;
+    margin-bottom: 25px;
+  }
+  .project-title {
+    font-size: 1.1em;
+  }
+  .project-details p {
+    font-size: 0.85em;
+  }
+  .tool-tag {
+    padding: 0.3em 0.6em;
+    font-size: 0.7em;
+  }
+  .timeline-item,
+  .timeline-item.reverse {
+    margin: 1.2em auto;
   }
 }
