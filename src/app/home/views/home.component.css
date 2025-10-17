@@ -1,11 +1,12 @@
 .topnav {
   overflow: hidden;
-  padding: 20px 12px;
+  padding: 20px;
   position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  gap: 4px;
+  gap: 16px;
+  margin-left: 20px;
 }
 
 .topnav a {
@@ -54,7 +55,7 @@
   padding: 10px 20px;
   color: aquamarine;
   background: transparent;
-  margin: 0 0 0 auto;
+  margin: 0;
   opacity: 0;
   transform: translateY(-30px);
   animation: fadeInDownHeader 0.8s forwards;
@@ -282,35 +283,37 @@
 @media (max-width: 600px) {
   .topnav {
     padding: 16px 10px;
+    gap: 12px;
+    margin-left: 10px;
   }
 
   .topnav a {
-    padding: 8px 10px;
+    padding: 8px;
     font-size: 14px;
   }
 
   .resume {
-    padding: 8px 14px;
+    padding: 8px 12px;
     font-size: 14px;
-    margin: 0 0 0 8px;
   }
 }
 
 @media (max-width: 517px) {
   .topnav {
-    padding: 14px 6px;
+    padding: 14px 8px;
+    gap: 8px;
+    margin-left: 6px;
   }
 
   .topnav a {
-    padding: 6px 8px;
+    padding: 6px;
     font-size: 13px;
     letter-spacing: 0.5px;
   }
 
   .resume {
-    padding: 6px 10px;
+    padding: 6px 8px;
     font-size: 13px;
-    margin: 0 0 0 6px;
   }
 
   .home {
@@ -333,19 +336,20 @@
 
 @media (max-width: 400px) {
   .topnav {
-    padding: 12px 4px;
+    padding: 12px 6px;
+    gap: 6px;
+    margin-left: 4px;
   }
 
   .topnav a {
-    padding: 6px 6px;
+    padding: 6px 4px;
     font-size: 12px;
     letter-spacing: 0.25px;
   }
 
   .resume {
-    padding: 6px 10px;
+    padding: 6px 8px;
     font-size: 12px;
-    margin: 0 4px;
   }
 
   .home {
