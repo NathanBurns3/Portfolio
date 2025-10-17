@@ -1,14 +1,7 @@
 #contact {
   padding: 80px 20px;
   min-height: 100vh;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-#contact.section-visible {
   opacity: 1;
-  transform: translateY(0);
 }
 
 #contact h2 {
@@ -18,14 +11,7 @@
   font-size: 500%;
   text-shadow: 0px 4px black;
   position: relative;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
-}
-
-#contact.section-visible h2 {
   opacity: 1;
-  transform: translateY(0);
 }
 
 #contact h2::after {
@@ -33,15 +19,10 @@
   position: absolute;
   bottom: -15px;
   left: 50%;
-  width: 0;
+  width: 140px;
   height: 3px;
   background: aquamarine;
   transform: translateX(-50%);
-  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1) 0.8s;
-}
-
-#contact.section-visible h2::after {
-  width: 140px;
 }
 
 * {
@@ -100,13 +81,7 @@ button:enabled:hover {
   margin: 0 auto;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
-  opacity: 0;
-  transform: translateY(30px);
-}
-
-.contactContainer.animate {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .contactContainer:hover {
@@ -116,14 +91,7 @@ button:enabled:hover {
 
 .form-group {
   margin-bottom: 1.5em;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-group.animate {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .alert {

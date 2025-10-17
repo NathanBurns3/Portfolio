@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 //import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { FormBuilder, NgForm } from '@angular/forms';
@@ -8,7 +8,7 @@ import { FormBuilder, NgForm } from '@angular/forms';
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.css'],
 })
-export class ContactMeComponent implements AfterViewInit {
+export class ContactMeComponent {
   @ViewChild('myForm') contactForm!: NgForm;
   name!: string;
   email!: string;
@@ -21,48 +21,6 @@ export class ContactMeComponent implements AfterViewInit {
   });
 
   constructor(private fb: FormBuilder, private httpClient: HttpClient) {}
-
-  ngAfterViewInit() {
-    this.setupScrollAnimations();
-  }
-
-  private setupScrollAnimations() {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target.id === 'contact') {
-              entry.target.classList.add('section-visible');
-              this.animateContactForm();
-            }
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      observer.observe(contactSection);
-    }
-  }
-
-  private animateContactForm() {
-    const contactContainer = document.querySelector('.contactContainer');
-    const formGroups = document.querySelectorAll('.form-group');
-
-    setTimeout(() => {
-      if (contactContainer) {
-        contactContainer.classList.add('animate');
-      }
-    }, 400);
-
-    formGroups.forEach((group, index) => {
-      setTimeout(() => {
-        group.classList.add('animate');
-      }, 600 + index * 150);
-    });
-  }
 
   //Send an email using formspree.io account
   sendEmail(name: String, email: String, message: String) {

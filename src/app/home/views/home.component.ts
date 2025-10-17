@@ -16,4 +16,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.socialMediaLinks = this.linkService.getSocialMediaLinks();
   }
+
+  scrollToElement(event: Event, elementId: string) {
+    event.preventDefault();
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
