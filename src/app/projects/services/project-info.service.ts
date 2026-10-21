@@ -8,7 +8,49 @@ export class ProjectInfoService {
   getProjectInfo(): IProjectInfo[] {
     return [
       {
-        // fitness tracker
+        imageSrc: './assets/project-images/AwayGame.png',
+        imageAlt: 'Away Game project preview',
+        projectTitle: 'Away Game',
+        toolsUsed: [
+          'Angular',
+          'TypeScript',
+          'Tailwind CSS',
+          'FastAPI',
+          'PostgreSQL',
+          'Docker',
+          'Azure Functions',
+          'Clerk',
+          'GitHub Actions',
+        ],
+        projectDescription: [
+          'Built a full-stack web app for traveling sports fans to discover nearby games, safety alerts, fan meetups, and social features.',
+          'Won Best Overall Project and Best in Category at the university Senior Expo against 65+ teams.',
+          'Architected a scalable backend with FastAPI, async SQLAlchemy, Alembic migrations, and PostgreSQL deployed through Azure Functions and nightly scheduled triggers.',
+          'Implemented Clerk authentication, a Leaflet mini-map centered on the user, real-time chat, friend and DM features, and visibility-aware polling for notifications.',
+          'Containerized services with Docker and automated deployment with GitHub Actions CI/CD.',
+        ],
+      },
+      {
+        imageSrc: './assets/project-images/FocusTracker.svg',
+        imageAlt: 'CLI and web productivity tracker preview',
+        projectTitle: 'CLI & Web Productivity Tracker',
+        toolsUsed: [
+          'Go',
+          'PostgreSQL',
+          'AppleScript',
+          'Chrome Extension (JS)',
+          'React',
+          'Next.js',
+          'Docker',
+        ],
+        projectDescription: [
+          'Built a macOS activity tracking system with a Go-based CLI and Chrome extension to capture application and web usage.',
+          'Persisted logs in PostgreSQL through a background macOS launchd daemon.',
+          'Visualized usage data through a Cobra CLI with asciigraph terminal charts and a React/Next.js dashboard with Recharts.',
+          'Containerized the workflow with Docker to keep the CLI, extension, and dashboard environment consistent.',
+        ],
+      },
+      {
         imageSrc: './assets/project-images/ActiveLifeTracker.png',
         imageAlt: 'ActiveLife Tracker',
         projectTitle: 'ActiveLife Tracker',
@@ -90,18 +132,6 @@ export class ProjectInfoService {
         ],
         repoLink: 'https://github.com/NathanBurns3/Endless-Runner-Game',
         liveLink: 'https://nathanburns3.github.io/Endless-Runner-Game/',
-      },
-      {
-        //recurisve file lister
-        imageSrc: './assets/project-images/RFL.png',
-        imageAlt: 'Recursive File Lister',
-        projectTitle: 'Recursive File Lister',
-        toolsUsed: ['Java', 'JSwing', 'Git'],
-        projectDescription: [
-          'Created a JSwing application that uses JFileChooser to allow users to select a directory in the system',
-          'Uses a recursive approach to list all the files within the chosen directory and any of its sub-directories',
-        ],
-        repoLink: 'https://github.com/NathanBurns3/Lab-11-Recursive-Filelister',
       },
     ];
   }
