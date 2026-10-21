@@ -8,6 +8,7 @@ export class ProjectInfoService {
   getProjectInfo(): IProjectInfo[] {
     return [
       {
+        //away game
         imageSrc: './assets/project-images/AwayGame.png',
         imageAlt: 'Away Game project preview',
         projectTitle: 'Away Game',
@@ -31,7 +32,8 @@ export class ProjectInfoService {
         ],
       },
       {
-        imageSrc: './assets/project-images/FocusTracker.svg',
+        //activity tracker
+        imageSrc: './assets/project-images/ActivityTracker.png',
         imageAlt: 'CLI and web productivity tracker preview',
         projectTitle: 'CLI & Web Productivity Tracker',
         toolsUsed: [
@@ -51,6 +53,7 @@ export class ProjectInfoService {
         ],
       },
       {
+        //fitness tracker
         imageSrc: './assets/project-images/ActiveLifeTracker.png',
         imageAlt: 'ActiveLife Tracker',
         projectTitle: 'ActiveLife Tracker',
