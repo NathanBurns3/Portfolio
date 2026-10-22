@@ -12,16 +12,15 @@
 </div>
 
 <div class="home">
-  <h3>Hey there, I'm</h3>
   <div class="name-container">
     <h1>Nathan Burns</h1>
   </div>
-  <h4>Software Development Student</h4>
+  <h4>Full Stack Software Engineer</h4>
   <div class="btn-group">
     <ng-container *ngFor="let link of socialMediaLinks; let i = index">
       <div
         class="buttons"
-        [ngStyle]="{ 'animation-delay': 3.2 + i * 0.2 + 's' }"
+        [ngStyle]="{ 'animation-delay': 1.5 + i * 0.12 + 's' }"
       >
         <button type="submit">
           <a href="{{ link.url }}" target="_blank">

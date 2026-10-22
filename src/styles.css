@@ -4,14 +4,8 @@ html {
 
 body {
   font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(
-    160deg,
-    #173042 0%,
-    #214a59 25%,
-    #2c6671 50%,
-    #357c84 75%,
-    #3f9599 100%
-  );
+  background: #0d202c;
+  color: #dce9ed;
 }
 
 html,
@@ -25,4 +19,17 @@ body {
 
 section {
   scroll-margin-top: 80px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #7fffd4;
+}
+
+::selection {
+  color: #0d202c;
+  background: #7fffd4;
 }

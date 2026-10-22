@@ -21,7 +21,7 @@
   left: 50%;
   width: 140px;
   height: 3px;
-  background: aquamarine;
+  background: #7fffd4;
   transform: translateX(-50%);
 }
 
@@ -178,5 +178,99 @@ textarea:focus {
 
   label {
     font-size: 1em;
+  }
+}
+
+/* Editorial reset */
+#contact {
+  max-width: 1280px;
+  min-height: 0;
+  margin: 0 auto;
+  padding: 0 40px 120px;
+}
+
+#contact .section-heading {
+  border-bottom: 1px solid rgba(234, 246, 251, 0.2);
+  padding-bottom: 22px;
+  margin-bottom: 54px;
+}
+
+#contact h2 {
+  color: #dce9ed;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  text-align: left;
+  margin: 0;
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+#contact h2::after {
+  display: none;
+}
+
+.contactContainer {
+  max-width: 720px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.contactContainer:hover {
+  box-shadow: none;
+}
+
+label {
+  color: #a7b8be;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+input[type="text"],
+textarea {
+  border: 0;
+  border-bottom: 1px solid rgba(234, 246, 251, 0.3);
+  border-radius: 0;
+  padding: 14px 0;
+  margin: 0 0 24px;
+  background: transparent;
+  box-shadow: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border: 0;
+  border-bottom: 1px solid #7fffd4;
+  background: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+button {
+  border-radius: 0;
+  background: #7fffd4;
+  box-shadow: none;
+  padding: 12px 22px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+button:enabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+  #contact {
+    padding: 0 20px 80px;
   }
 }

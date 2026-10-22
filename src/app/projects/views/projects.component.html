@@ -1,6 +1,8 @@
 <!-- Option 2: Horizontal Timeline Layout -->
 <div id="projects">
-  <h2>Projects</h2>
+  <div class="section-heading">
+    <h2>Projects</h2>
+  </div>
 
   <div class="projects-timeline">
     <ng-container *ngFor="let project of projectInfo; let i = index">
@@ -10,18 +12,24 @@
         [class.reverse]="i % 2 === 1"
       >
         <div class="timeline-content">
-          <div class="project-info">
+          <div class="project-title-row">
             <h3 class="project-title">{{ project.projectTitle }}</h3>
-            <div class="tools-container">
+            <p class="project-summary">{{ project.shortDescription }}</p>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Tech</span>
+              <div class="tools-container">
               <span class="tool-tag" *ngFor="let tool of project.toolsUsed">{{
                 tool
               }}</span>
+              </div>
             </div>
-            <div class="project-details">
-              <p *ngFor="let description of project.projectDescription">
+            <ul class="project-details">
+              <li *ngFor="let description of project.projectDescription">
                 {{ description }}
-              </p>
-            </div>
+              </li>
+            </ul>
             <div class="project-buttons">
               <a
                 *ngIf="project.repoLink"

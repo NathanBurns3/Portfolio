@@ -12,6 +12,7 @@ export class ProjectInfoService {
         imageSrc: './assets/project-images/AwayGame.png',
         imageAlt: 'Away Game project preview',
         projectTitle: 'Away Game',
+        shortDescription: 'Angular and FastAPI sports social platform.',
         toolsUsed: [
           'Angular',
           'TypeScript',
@@ -30,12 +31,15 @@ export class ProjectInfoService {
           'Implemented Clerk authentication, a Leaflet mini-map centered on the user, real-time chat, friend and DM features, and visibility-aware polling for notifications.',
           'Containerized services with Docker and automated deployment with GitHub Actions CI/CD.',
         ],
+        repoLink: 'https://github.com/UC-Captstone/Away-Game',
+        liveLink: 'https://awaygameusa.com/login',
       },
       {
         //activity tracker
         imageSrc: './assets/project-images/ActivityTracker.png',
         imageAlt: 'CLI and web productivity tracker preview',
         projectTitle: 'CLI & Web Productivity Tracker',
+        shortDescription: 'Go activity tracker with React dashboard.',
         toolsUsed: [
           'Go',
           'PostgreSQL',
@@ -51,12 +55,14 @@ export class ProjectInfoService {
           'Visualized usage data through a Cobra CLI with asciigraph terminal charts and a React/Next.js dashboard with Recharts.',
           'Containerized the workflow with Docker to keep the CLI, extension, and dashboard environment consistent.',
         ],
+        repoLink: 'https://github.com/NathanBurns3/Focus-Tracker',
       },
       {
         //fitness tracker
         imageSrc: './assets/project-images/ActiveLifeTracker.png',
         imageAlt: 'ActiveLife Tracker',
         projectTitle: 'ActiveLife Tracker',
+        shortDescription: 'MEAN stack fitness and nutrition tracker.',
         toolsUsed: [
           'Angular',
           'Express.js',
@@ -85,6 +91,7 @@ export class ProjectInfoService {
         imageSrc: './assets/project-images/CryptoTracker.png',
         imageAlt: 'Crypto Tracker Mobile App',
         projectTitle: 'Crypto Tracker Mobile App',
+        shortDescription: 'Xamarin.Forms mobile cryptocurrency tracker.',
         toolsUsed: [
           'Xamarin.Forms',
           'C#',
@@ -105,6 +112,7 @@ export class ProjectInfoService {
         imageSrc: './assets/project-images/sportsText.png',
         imageAlt: 'Sports Text Script',
         projectTitle: 'Sports Text Script',
+        shortDescription: 'Python sports updates with Twilio messaging.',
         toolsUsed: ['Python', 'ESPN API', 'Twilio API', 'CronTab', 'Git'],
         projectDescription: [
           'Developed a Python script to interact with the ESPN API for retrieving daily sports information',
@@ -119,6 +127,7 @@ export class ProjectInfoService {
         imageSrc: './assets/project-images/ERG.png',
         imageAlt: 'Endless Runner',
         projectTitle: 'Endless Runner Game',
+        shortDescription: 'Phaser game using geolocation and weather APIs.',
         toolsUsed: [
           'Phaser',
           'Geolocation API',
