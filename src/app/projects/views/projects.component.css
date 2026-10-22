@@ -256,3 +256,32 @@
     text-align: left;
   }
 }
+
+@media (hover: none), (pointer: coarse) {
+  .timeline-item .project-summary {
+    opacity: 1;
+  }
+
+  .timeline-item .project-meta {
+    max-height: 120px;
+    opacity: 1;
+  }
+
+  .timeline-item .project-details {
+    max-height: 500px;
+    margin-top: 24px;
+    opacity: 1;
+  }
+
+  .timeline-item .project-buttons {
+    max-height: 60px;
+    margin-top: 28px;
+    opacity: 1;
+  }
+
+  .timeline-item .project-visual {
+    max-height: 300px;
+    margin-top: 24px;
+    opacity: 0.65;
+  }
+}

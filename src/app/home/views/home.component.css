@@ -481,6 +481,7 @@
     margin-bottom: 220px;
   }
   .home h1 {
-    font-size: clamp(3.3rem, 18vw, 6rem);
+    font-size: clamp(2.8rem, 12vw, 4.5rem);
+    letter-spacing: -0.05em;
   }
 }
